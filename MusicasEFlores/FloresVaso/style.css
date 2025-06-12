@@ -1,0 +1,45 @@
+.valentines-text {
+  position: absolute;
+  width: 380px;
+  height: 100px;
+  padding: 20px;
+  color: white;
+  background: rgba(255, 192, 203, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+  text-align: center;
+  animation: fadeInUp 2s ease-out;
+}
+
+.valentines-text h2 {
+  font-size: 28px;
+  color: #ff6ec7;
+  text-shadow: 0 0 10px #ffb6c1;
+}
+
+.valentines-text p {
+  font-size: 18px;
+  color: #ffc0cb;
+}
+
+.left {
+  top: -60vh;
+  left: 50vh;
+}
+
+.right {
+  top: -60vh;
+  right: 50vh;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
