@@ -1,240 +1,349 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nosso Álbum de Fotos</title>
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            text-align: center;
-            background-color: #6D4C41;
-            color: #ffffff;
-            position: relative;
-        }
+      body {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        background-color: #6d4c41;
+        color: #ffffff;
+        position: relative;
+      }
+      h1 {
+        font-size: 3em;
+        text-shadow: 2px 2px 5px #ffd700;
+        color: #ffd700;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fill,
+          minmax(250px, 1fr)
+        ); /* Layout em grid */
+        gap: 15px; /* Espaçamento entre as imagens */
+        justify-items: center; /* Centraliza as imagens dentro das células */
+        margin-top: 20px;
+      }
+      .gallery img {
+        width: 100%; /* Faz as imagens ocuparem toda a largura da célula */
+        height: 250px;
+        object-fit: cover; /* Ajusta a imagem para preencher o espaço */
+        border-radius: 15px;
+        box-shadow: 3px 3px 10px rgba(255, 215, 0, 0.5);
+        border: 3px solid #ffd700;
+        padding: 5px;
+        background: #fff8dc;
+      }
+
+      .gallery video {
+        width: 100%; /* Faz as imagens ocuparem toda a largura da célula */
+        height: 250px;
+        object-fit: cover; /* Ajusta a imagem para preencher o espaço */
+        border-radius: 15px;
+        box-shadow: 3px 3px 10px rgba(255, 215, 0, 0.5);
+        border: 3px solid #ffd700;
+        padding: 5px;
+        background: #fff8dc;
+      }
+      button {
+        background-color: #ffd700;
+        color: #6d4c41;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 1em;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      button:hover {
+        background-color: #e6be8a;
+      }
+      textarea {
+        width: 80%;
+        height: 166px;
+        border: 2px solid #ffd700;
+        border-radius: 1.3px;
+        padding: 10px;
+        font-size: 1.3em;
+        resize: none;
+        margin-top: 10px;
+        background-color: #fff8dc;
+        color: #6d4c41;
+      }
+      .spotify-box {
+        margin-top: 20px;
+        padding: 10px;
+        background: #fff8dc;
+        border-radius: 10px;
+        display: inline-block;
+        box-shadow: 3px 3px 10px rgba(255, 215, 0, 0.5);
+      }
+      .daisies {
+        position: absolute;
+        width: 150px;
+        height: auto;
+      }
+      .top-left {
+        top: 10px;
+        left: 10px;
+      }
+      .top-right {
+        top: 10px;
+        right: 10px;
+      }
+      .bottom-left {
+        bottom: 10px;
+        left: 10px;
+      }
+      .bottom-right {
+        bottom: 10px;
+        right: 10px;
+      }
+      .spotify-box p {
+        color: #000000;
+      }
+
+      @media (max-width: 768px) {
         h1 {
-            font-size: 3em;
-            text-shadow: 2px 2px 5px #FFD700;
-            color: #FFD700;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Layout em grid */
-            gap: 15px; /* Espaçamento entre as imagens */
-            justify-items: center; /* Centraliza as imagens dentro das células */
-            margin-top: 20px;
+          font-size: 1.5em;
         }
         .gallery img {
-            width: 100%; /* Faz as imagens ocuparem toda a largura da célula */
-            height: 250px;
-            object-fit: cover; /* Ajusta a imagem para preencher o espaço */
-            border-radius: 15px;
-            box-shadow: 3px 3px 10px rgba(255, 215, 0, 0.5);
-            border: 3px solid #FFD700;
-            padding: 5px;
-            background: #FFF8DC;
-        }
-
-        .gallery video {
-            width: 100%; /* Faz as imagens ocuparem toda a largura da célula */
-            height: 250px;
-            object-fit: cover; /* Ajusta a imagem para preencher o espaço */
-            border-radius: 15px;
-            box-shadow: 3px 3px 10px rgba(255, 215, 0, 0.5);
-            border: 3px solid #FFD700;
-            padding: 5px;
-            background: #FFF8DC;
+          width: 200px;
+          height: 200px;
         }
         button {
-            background-color: #FFD700;
-            color: #6D4C41;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 10px;
-            font-size: 1em;
-            cursor: pointer;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-        }
-        button:hover {
-            background-color: #E6BE8A;
+          font-size: 0.9em;
+          padding: 8px 16px;
         }
         textarea {
-            width: 80%;
-            height: 166px;
-            border: 2px solid #FFD700;
-            border-radius: 1.3px;
-            padding: 10px;
-            font-size: 1.3em;
-            resize: none;
-            margin-top: 10px;
-            background-color: #FFF8DC;
-            color: #6D4C41;
+          width: 90%;
         }
         .spotify-box {
-            margin-top: 20px;
-            padding: 10px;
-            background: #FFF8DC;
-            border-radius: 10px;
-            display: inline-block;
-            box-shadow: 3px 3px 10px rgba(255, 215, 0, 0.5);
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.2em;
+        }
+        .gallery img {
+          width: 180px;
+          height: 180px;
+        }
+        button {
+          font-size: 0.8em;
+          padding: 6px 12px;
+        }
+        textarea {
+          width: 95%;
+          font-size: 0.9em;
         }
         .daisies {
-            position: absolute;
-            width: 150px;
-            height: auto;
+          width: 60px;
         }
-        .top-left { top: 10px; left: 10px; }
-        .top-right { top: 10px; right: 10px; }
-        .bottom-left { bottom: 10px; left: 10px; }
-        .bottom-right { bottom: 10px; right: 10px; }
-        .spotify-box p {color: #000000;}
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 1.5em;
-            }
-            .gallery img {
-                width: 200px;
-                height: 200px;
-            }
-            button {
-                font-size: 0.9em;
-                padding: 8px 16px;
-            }
-            textarea {
-                width: 90%;
-            }
-            .spotify-box {
-                width: 100%;
-                margin-top: 10px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.2em;
-            }
-            .gallery img {
-                width: 180px;
-                height: 180px;
-            }
-            button {
-                font-size: 0.8em;
-                padding: 6px 12px;
-            }
-            textarea {
-                width: 95%;
-                font-size: 0.9em;
-            }
-            .daisies {
-                width: 60px;
-            }
-        }
+      }
     </style>
-</head>
-<body>
-    <img src="Imagens/Margarida.png" class="daisies top-left" alt="Margarida">
-    <img src="Imagens/Margarida.png" class="daisies top-right" alt="Margarida">
-    <img src="Imagens/Margarida.png" class="daisies bottom-left" alt="Margarida">
-    <img src="Imagens/Margarida.png" class="daisies bottom-right" alt="Margarida">
-    
+  </head>
+  <body>
+    <img src="Imagens/Margarida.png" class="daisies top-left" alt="Margarida" />
+    <img
+      src="Imagens/Margarida.png"
+      class="daisies top-right"
+      alt="Margarida"
+    />
+    <img
+      src="Imagens/Margarida.png"
+      class="daisies bottom-left"
+      alt="Margarida"
+    />
+    <img
+      src="Imagens/Margarida.png"
+      class="daisies bottom-right"
+      alt="Margarida"
+    />
+
     <h1>Nosso Álbum de Fotos 💛</h1>
-    <textarea id="message" placeholder="Oie meu amor, tudo bem? Eeeee lebra do que eu falei que iria ficar pronto um negocinho? Então eu fiz esse sitezinho para poder colocar nossas fotos, atualmente não consegui deixar um modo para você também poder colocar fotinhas porem eu vou colocar mais tarde. Amor eu quero muito te dar o MUNDO TODO para você, eu quero poder dar a melhor vida para você, quero poder viver com você do meu lado, sim já disse isso varias vezes, porem eu não consigo viver sem você, tudo que acontece em minha vida a todo momento eu fico pensando em você ainda não sei como te demostrar todo o amor que eu tenho por você e eu espero um dia coseguir demonstrar ele para você. Sabrina Magalhães o meu grande amor, o amor da minha vida, ja estamos no namoro 2342, porem você aceita a namorar comigo novamente? Você quer viver um namoro a distancia comigo, mesmo sabendo que eu sou lerdo, chato, emburrado, não sabe viver muito bem no mundo? Você me ajuda a viver e me ensine a viver nesse mundo? Eu quero poder passar por todas as coisas do seu lado, Eu te amo meu amor💌"></textarea>
-    <br>
-    <input type="file" id="fileInput" accept="image/*">
+    <textarea
+      id="message"
+      placeholder="Oie, meu amor! Tudo bem?
+    Quero que você saiba que o meu maior desejo é te dar o mundo inteiro. E, se eu não puder dar, então quero conquistá-lo com você — explorar cada pedacinho dele ao seu lado, sendo inteiramente seu, e completamente feliz por estar vivendo tudo isso com você.
+
+    Quero te dar a melhor vida possível. Quero te ter sempre comigo, viver cada momento com você ao meu lado. Tudo o que acontece comigo, de alguma forma, sempre me faz lembrar de você. Ainda não sei como expressar todo o amor que sinto, mas espero um dia conseguir demonstrar tudo isso com gestos, palavras e atitudes.
+
+    Sabrina Magalhães, meu grande amor, o amor da minha vida. Já são 607 dias juntos, e mesmo assim, preciso te perguntar de novo:
+    Você aceita namorar comigo?
+
+    Aceita continuar vivendo esse namoro à distância, mesmo sabendo que eu sou lerdo, chato, emburrado?
+
+    Quero passar por tudo com você ao meu lado. E em cada momento, reforçar, viver e sentir que eu te amo cada vez mais.
+
+    Eu te amo, meu amor.💌
+    Feliz dias dos namorados atrasados
+    Feliz nosso dia adiantado
+    E feliz vida, por estar ao seu lado ❤"
+    ></textarea>
+    <br />
+    <input type="file" id="fileInput" accept="image/*" />
     <button onclick="uploadImage()">📸 Enviar Foto</button>
     <div class="gallery" id="gallery"></div>
 
     <!-- Exemplos de imagens já carregadas na galeria -->
     <div class="gallery">
-        <img src="Imagens/MeuAmor/20241102_170313.jpg">
-        <img src="Imagens/MeuAmor/20250419_121703.jpg">
-        <img src="Imagens/MeuAmor/20250420_111455.jpg">
-        <img src="Imagens/MeuAmor/20250608_001615.jpg">
-        <img src="Imagens/MeuAmor/IMG-20240415-WA0028.jpg">
-        <img src="Imagens/MeuAmor/IMG-20240415-WA0029~2.jpg">
-        <img src="Imagens/MeuAmor/IMG_20231020_230101_960.webp">
-        <img src="Imagens/MeuAmor/IMG_20231020_230130_598.webp">
-        <img src="Imagens/MeuAmor/IMG_20231020_230203_484.webp">
-        <img src="Imagens/MeuAmor/IMG_20231020_230302_824.webp">
-        <img src="Imagens/MeuAmor/IMG_20231020_230331_715.webp">
-        <img src="Imagens/MeuAmor/IMG_20231231_175205_986.webp">
-        <img src="Imagens/MeuAmor/IMG_20240213_211925_641.webp">
-        <img src="Imagens/MeuAmor/IMG_20240601_221006_003.webp">
-        <img src="Imagens/MeuAmor/IMG_20240601_221030_552.webp">
-        <img src="Imagens/MeuAmor/IMG_20240601_221030_552.webp">
-        <img src="Imagens/MeuAmor/IMG_20240707_003145_268.webp">
-        <img src="Imagens/MeuAmor/IMG_20240915_010603_632.webp">
-        <img src="Imagens/MeuAmor/IMG_20241102_171050_099~2.jpg">
-        <img src="Imagens/MeuAmor/IMG_20250315_210158_691.webp">
-        <img src="Imagens/MeuAmor/IMG_20250323_031445_548.webp">
-        <img src="Imagens/MeuAmor/IMG_20250420_195334_363.webp">
-        <img src="Imagens/MeuAmor/IMG_20250420_195400_156~2.jpg">
-        <img src="Imagens/MeuAmor/IMG_20250420_195536_219.webp">
-        <img src="Imagens/MeuAmor/IMG_20250504_144844_971(1).jpg">
-        <img src="Imagens/MeuAmor/Screenshot_2024-01-01-21-08-25-935_com.instagram.android.jpg">
-        <img src="Imagens/MeuAmor/Screenshot_20240304-080521.png">
-        <img src="Imagens/MeuAmor/Screenshot_20250612_083333_Photos.jpg">
-        <img src="Imagens/MeuAmor/20250420_111455.jpg">
-        <img src="Imagens/MeuAmor/IMG_20231020_230302_824.webp">
-        <video src="Imagens/MeuAmor/VID-20231015-WA0029.mp4" autoplay muted loop></video>
-                <video src="Imagens/MeuAmor/VID-20231015-WA0029.mp4" autoplay muted loop></video>
-        <video src="Imagens/MeuAmor/VID-20240414-WA0041.mp4" autoplay muted loop></video>
-        <video src="Imagens/MeuAmor/VID_129940216_024341_860.mp4" autoplay muted loop></video>
-        <video src="Imagens/MeuAmor/VID_20250118_172108_336.mp4" autoplay muted loop></video>
-        <video src="Imagens/MeuAmor/VID_20250315_180852_695.mp4" autoplay muted loop></video>
-        <video src="Imagens/MeuAmor/VID_20250323_001603_638.mp4" autoplay muted loop></video>
-        <video src="Imagens/MeuAmor/VID_20250504_114918_046.mp4" autoplay muted loop></video>
-        <video src="Imagens/MeuAmor/VID_20250504_115051_274.mp4" autoplay muted loop></video>
-        <video src="Imagens/MeuAmor/VID_20250512_150034_510.mp4" autoplay muted loop></video>
-        <video src="Imagens/MeuAmor/VID_31521223_133938_337.mp4" autoplay muted loop></video>
-        
+      <img src="Imagens/MeuAmor/IMG_20250323_031445_548.webp" />
+      <video
+        src="Imagens/MeuAmor/VID-20231015-WA0029.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <img src="Imagens/MeuAmor/IMG_20231020_230130_598.webp" />
+      <img src="Imagens/MeuAmor/Screenshot_20240304-080521.png" />
+      <img src="Imagens/MeuAmor/IMG_20240213_211925_641.webp" />
+      <img src="Imagens/MeuAmor/IMG-20240415-WA0029~2.jpg" />
+      <img src="Imagens/MeuAmor/IMG_20231020_230101_960.webp" />
+      <video
+        src="Imagens/MeuAmor/VID_20250504_115051_274.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <img src="Imagens/MeuAmor/20241102_170313.jpg" />
+      <img src="Imagens/MeuAmor/IMG_20231020_230302_824.webp" />
+      <video
+        src="Imagens/MeuAmor/VID_20250315_180852_695.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <img src="Imagens/MeuAmor/IMG_20240707_003145_268.webp" />
+      <video
+        src="Imagens/MeuAmor/VID-20240414-WA0041.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <img src="Imagens/MeuAmor/IMG_20250420_195334_363.webp" />
+      <video
+        src="Imagens/MeuAmor/VID_20250512_150034_510.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <img src="Imagens/MeuAmor/IMG_20231020_230203_484.webp" />
+      <img src="Imagens/MeuAmor/IMG_20250420_195536_219.webp" />
+      <img src="Imagens/MeuAmor/IMG_20231020_230331_715.webp" />
+      <img src="Imagens/MeuAmor/IMG_20231231_175205_986.webp" />
+      <img
+        src="Imagens/MeuAmor/Screenshot_2024-01-01-21-08-25-935_com.instagram.android.jpg"
+      />
+      <video
+        src="Imagens/MeuAmor/VID_20250504_114918_046.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <img src="Imagens/MeuAmor/IMG_20240601_221006_003.webp" />
+      <img src="Imagens/MeuAmor/IMG_20241102_171050_099~2.jpg" />
+      <img src="Imagens/MeuAmor/IMG-20240415-WA0028.jpg" />
+      <img src="Imagens/MeuAmor/20250420_111455.jpg" />
+      <img src="Imagens/MeuAmor/IMG_20231020_230302_824.webp" />
+      <video
+        src="Imagens/MeuAmor/VID_20250118_172108_336.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <img src="Imagens/MeuAmor/IMG_20240601_221030_552.webp" />
+      <video
+        src="Imagens/MeuAmor/VID_31521223_133938_337.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <img src="Imagens/MeuAmor/IMG_20240915_010603_632.webp" />
+      <img src="Imagens/MeuAmor/IMG_20250420_195400_156~2.jpg" />
+      <img src="Imagens/MeuAmor/20250608_001615.jpg" />
+      <video
+        src="Imagens/MeuAmor/VID-20231015-WA0029.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <img src="Imagens/MeuAmor/20250419_121703.jpg" />
+      <video
+        src="Imagens/MeuAmor/VID_129940216_024341_860.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <img src="Imagens/MeuAmor/IMG_20250315_210158_691.webp" />
+      <video
+        src="Imagens/MeuAmor/VID_20250323_001603_638.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <img src="Imagens/MeuAmor/Screenshot_20250612_083333_Photos.jpg" />
+      <img src="Imagens/MeuAmor/IMG_20250504_144844_971(1).jpg" />
     </div>
-    
+
     <div class="spotify-box">
-        <p>🎵 Nossa Música:</p>
-        <iframe id="spotifyEmbed" style="border-radius:12px" width="300" height="80" frameBorder="0" allowfullscreen="" 
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-            loading="lazy" src="https://open.spotify.com/embed/track/07DskqQ1NbTiotX1WIV7ob?si=63a8bf1837e2406f"></iframe>
+      <p>🎵 Nossa Primeira Música:</p>
+      <iframe
+        id="spotifyEmbed"
+        style="border-radius: 12px"
+        width="300"
+        height="80"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+        src="https://open.spotify.com/embed/track/07DskqQ1NbTiotX1WIV7ob?si=63a8bf1837e2406f"
+      ></iframe>
     </div>
 
     <script>
-        // Função para carregar as imagens salvas do localStorage
-        window.onload = function() {
-            const gallery = document.getElementById('gallery');
-            const savedImages = JSON.parse(localStorage.getItem('images')) || [];
+      // Função para carregar as imagens salvas do localStorage
+      window.onload = function () {
+        const gallery = document.getElementById("gallery")
+        const savedImages = JSON.parse(localStorage.getItem("images")) || []
 
-            savedImages.forEach(function(imgSrc) {
-                const img = document.createElement('img');
-                img.src = imgSrc;
-                gallery.appendChild(img);
-            });
-        };
+        savedImages.forEach(function (imgSrc) {
+          const img = document.createElement("img")
+          img.src = imgSrc
+          gallery.appendChild(img)
+        })
+      }
 
-        // Função para salvar as imagens no localStorage
-        function uploadImage() {
-            const fileInput = document.getElementById('fileInput');
-            const gallery = document.getElementById('gallery');
-            
-            if (fileInput.files.length > 0) {
-                const file = fileInput.files[0];
-                const reader = new FileReader();
-                
-                reader.onload = function(e) {
-                    const imgSrc = e.target.result;
-                    const img = document.createElement('img');
-                    img.src = imgSrc;
-                    gallery.appendChild(img);
+      // Função para salvar as imagens no localStorage
+      function uploadImage() {
+        const fileInput = document.getElementById("fileInput")
+        const gallery = document.getElementById("gallery")
 
-                    // Salvar a imagem no localStorage
-                    let savedImages = JSON.parse(localStorage.getItem('images')) || [];
-                    savedImages.push(imgSrc);
-                    localStorage.setItem('images', JSON.stringify(savedImages));
-                };
-                
-                reader.readAsDataURL(file);
-            }
+        if (fileInput.files.length > 0) {
+          const file = fileInput.files[0]
+          const reader = new FileReader()
+
+          reader.onload = function (e) {
+            const imgSrc = e.target.result
+            const img = document.createElement("img")
+            img.src = imgSrc
+            gallery.appendChild(img)
+
+            // Salvar a imagem no localStorage
+            let savedImages = JSON.parse(localStorage.getItem("images")) || []
+            savedImages.push(imgSrc)
+            localStorage.setItem("images", JSON.stringify(savedImages))
+          }
+
+          reader.readAsDataURL(file)
         }
+      }
     </script>
-</body>
+  </body>
 </html>
