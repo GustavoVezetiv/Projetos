@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roteiro: Gramado e Região</title>
+  <link rel="stylesheet" href="../../shared/style.css">
+</head>
+<body>
+  <header class="hero">
+    <a href="../../index.html" class="btn-back">← Voltar</a>
+    <h1 id="trip-title">Carregando...</h1>
+    <div class="storage-controls">
+      <button class="btn-storage" id="btn-pdf">🖨️ PDF</button>
+      <button class="btn-storage" id="btn-export">Exportar</button>
+      <button class="btn-storage" id="btn-import">Importar</button>
+      <input type="file" id="input-import" style="display:none" accept=".json">
+      <button class="btn-storage" id="btn-clear" style="background: rgba(229, 62, 62, 0.8)">Limpar Alterações</button>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-target="grid">Catálogo</button>
+    <button class="tab-btn" data-target="date">Por data</button>
+    <button class="tab-btn" data-target="kanban">Kanban</button>
+  </div>
+
+  <section class="toolbar">
+    <div class="controls">
+      <div class="control">
+        <label>Buscar</label>
+        <input type="text" id="search" placeholder="Nome do local...">
+      </div>
+      <div class="control">
+        <label>Cidade</label>
+        <select id="filter-cidade"><option value="">Todas</option></select>
+      </div>
+      <div class="control">
+        <label>Categoria</label>
+        <select id="filter-categoria"><option value="">Todas</option></select>
+      </div>
+      <div class="control">
+        <label>Data</label>
+        <select id="filter-date">
+          <option value="">Todas</option>
+          <option value="Sem data definida">Sem data definida</option>
+          <option value="19/07">19/07</option>
+          <option value="20/07">20/07</option>
+          <option value="21/07">21/07</option>
+          <option value="22/07">22/07</option>
+          <option value="23/07">23/07</option>
+          <option value="24/07 extra">24/07 extra</option>
+          <option value="25/07 extra">25/07 extra</option>
+        </select>
+      </div>
+      <div class="control">
+        <label>Valor (Até)</label>
+        <select id="filter-price">
+          <option value="">Todos</option>
+          <option value="free">Gratuito</option>
+          <option value="50">Até R$50</option>
+          <option value="100">Até R$100</option>
+          <option value="200">Até R$200</option>
+          <option value="200+">Acima de R$200</option>
+        </select>
+      </div>
+      <div class="control">
+        <label>Prime Gourmet</label>
+        <select id="filter-prime">
+          <option value="">Todos</option>
+          <option value="sim">Sim</option>
+          <option value="provável">Provável</option>
+          <option value="não">Não</option>
+        </select>
+      </div>
+      <div class="control">
+        <label>Status</label>
+        <select id="filter-status">
+          <option value="">Todos</option>
+          <option value="quero_ir">Quero ir</option>
+          <option value="talvez">Talvez</option>
+          <option value="reservado">Reservado</option>
+          <option value="feito">Feito</option>
+          <option value="descartado">Descartado</option>
+        </select>
+      </div>
+      <div class="control">
+        <label>Favoritos</label>
+        <select id="filter-fav">
+          <option value="">Todos</option>
+          <option value="sim">Apenas Favoritos</option>
+          <option value="nao">Não Favoritos</option>
+        </select>
+      </div>
+      <div class="control">
+        <label>Ações</label>
+        <button class="btn btn-primary" id="btn-new-item" style="height: 38px; width: 100%; border-radius: 6px; font-size: 14px; margin-top: auto;">+ Novo Passeio</button>
+      </div>
+    </div>
+    <div class="meta"><b id="count">...</b></div>
+  </section>
+
+  <!-- Views -->
+  <main id="view-grid" class="view-section active">
+    <div class="grid" id="grid-container"></div>
+  </main>
+
+  <main id="view-date" class="view-section">
+    <div id="date-container" style="max-width: 900px; margin: 0 auto;"></div>
+  </main>
+
+  <main id="view-kanban" class="view-section">
+    <div class="kanban-board" id="kanban-container"></div>
+  </main>
+
+  <!-- Modal Edit -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img id="modal-image" src="" alt="Capa">
+        <button class="modal-close" id="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h2 class="modal-title" id="modal-title">Título</h2>
+        <div id="modal-details" style="font-size: 13px; color: #4a5568; margin-bottom: 15px;"></div>
+        
+        <div id="m-online-box" style="display:none; background: #e0f2fe; color: #0369a1; padding: 10px; border-radius: 6px; font-size: 13px; margin-bottom: 15px;"></div>
+        <div id="m-tips-box" style="display:none; background: #fef9c3; color: #854d0e; padding: 10px; border-radius: 6px; font-size: 13px; margin-bottom: 20px;"></div>
+        
+        <div class="modal-grid">
+          <div class="form-group">
+            <label>Data Planejada</label>
+            <select id="m-date"></select>
+          </div>
+          <div class="form-group">
+            <label>Horário</label>
+            <input type="time" id="m-time">
+          </div>
+          <div class="form-group">
+            <label>Status</label>
+            <select id="m-status">
+              <option value="quero_ir">Quero ir</option>
+              <option value="talvez">Talvez</option>
+              <option value="reservado">Reservado</option>
+              <option value="feito">Feito</option>
+              <option value="descartado">Descartado</option>
+            </select>
+          </div>
+          <div class="form-group" style="align-items: flex-start; justify-content: center; flex-direction: row; gap: 10px; margin-top: 25px;">
+            <input type="checkbox" id="m-fav" style="width:auto; height:auto;">
+            <label for="m-fav" style="cursor:pointer; font-size: 15px; color:#eab308">Favorito (Fixar) ★</label>
+          </div>
+        </div>
+        
+        <div class="form-group" style="margin-bottom: 20px;">
+          <label>Notas Pessoais</label>
+          <textarea id="m-notes" placeholder="Digite algo para lembrar..."></textarea>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn btn-secondary" id="btn-cancel">Cancelar</button>
+          <button class="btn btn-primary" id="btn-save">Salvar Alterações</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="config.js"></script>
+  <script src="../../shared/utils.js"></script>
+  <script src="../../shared/storage.js"></script>
+  <script src="../../shared/sortable.min.js"></script>
+  <script src="../../shared/app.js"></script>
+</body>
+</html>

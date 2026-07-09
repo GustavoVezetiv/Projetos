@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+  <meta name="robots" content="index, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="description" content="Turismo de Barra do Garças" />
+  <meta name="keywords" content="Turismo de Barra do Garças, Galeria de Fotos, Galeria de Fotos da cidade, TV Prefeitura, Secretarias, Notícias, Notícias da Cidade, Documentos, Desenvolvimento, Sites, Websites, Institucional," />
+  <meta name="author" content="Turismo de Barra do Garças" />
+  <meta name="copyright" content="©2026 - Turismo de Barra do Garças - Todos os direitos reservados" />
+  <meta property="og:title" content="Turismo de Barra do Garças" />
+  <meta property="og:site_name" content="Turismo de Barra do Garças" />
+  <meta property="og:url" content="" />
+  <meta property="og:description" content="Turismo de Barra do Garças" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://turismo.barradogarcas.mt.gov.br/images/Sharer.png" />
+
+	<meta property="og:image:width"		content="" />
+	<meta property="og:image:height"	content="" />
+	  
+  <meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="">
+	<meta property="twitter:title" content="Turismo de Barra do Garças">
+	<meta property="twitter:description" content="Turismo de Barra do Garças">
+	<meta property="twitter:image" content="https://turismo.barradogarcas.mt.gov.br/images/Sharer.png">
+
+  <base href="https://turismo.barradogarcas.mt.gov.br/">
+  <title>Página Inicial - Turismo de Barra do Garças</title>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="images/favicon/favicon.ico">
+  <link rel="manifest" href="images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#04152F">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#04152F">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="css/lightgallery.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/slick.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+  <link rel="stylesheet" type="text/css" href="css/custom_slick.css">
+  <link rel="stylesheet" type="text/css" href="css/ekko-lightbox.min.css">
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.min.css?v=050525">
+  <link rel="stylesheet" type="text/css" href="css/index_acessibilidade.min.css?v=050525">
+  <link rel="stylesheet" type="text/css" href="css/index_acessibilidade_padrao.min.css?v=050525">
+
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/daterangepicker.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>  
+  <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="js/mascaras.js"></script>
+  <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+	<script type="text/javascript" src="js/jquery.touchSwipe-1.6.18.min.js"></script>
+	<script type="text/javascript" src="js/ekko-lightbox.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/lightgallery-all.min.js"></script>
+	<script type="text/javascript" src="js/config.js?v=050525"></script>
+  <script type="text/javascript" src="js/config_acessibilidade.js?v=050525"></script>
+
+</head>
+
+<body>
+  <header class="container-fluid container-header capa" id="col-box-menu">
+        <!-- Acessibilidade -->
+                <!-- Menu -->
+        <div class="row">
+  <section class="col-12 fluid-menu col-headroom" id="header" aria-labelledby="section-label-menu">
+    <section class="container container-menu capa" aria-labelledby="section-label-menu">
+      <h3 class="sr-only" id="section-label-menu">Seção do menu principal</h3>
+      <div class="row">
+        <article class="col-12 col-md-12 col-lg-2 col-xl-3 col-logo-top">
+          <a href="" title="Ir para a página principal do site" class="mx-auto logo-menu capa">
+            <div class="nav-logo-title ">
+              <img class="img-fluid" src="images/logo_topo_site.png" width="264" height="77" alt="Logo da Turismo de Barra do Garças">
+            </div>
+          </a>
+        </article>
+        <article class="col-12 col-md-12 col-lg-10 col-xl-9 ml-auto col-menu">
+          <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    A Cidade
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Sobre a cidade"
+                    href="A-Cidade/Sobre-a-Cidade/">Sobre a cidade</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página >Galeria de vídeos"
+                    href="A-Cidade/Galeria-de-videos/">Galeria de vídeos</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Galeria de fotos"
+                    href="A-Cidade/Galeria-de-fotos/">Galeria de fotos</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Telefones e Endereços Úteis"
+                    href="A-Cidade/Telefones-e-Enderecos-Uteis/">Telefones e Endereços Úteis</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Notícias"
+                    href="A-Cidade/Noticias/">Notícias</a></li>
+                  
+                    <li><a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Hospedagem"
+                    href="A-Cidade/Hospedagem/">Hospedagem</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Gastronomia"
+                    href="A-Cidade/Gastronomia/">Gastronomia</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Guias e Condutores de Turismo"
+                    href="A-Cidade/Guias-Condutores-Turismo/">Guias e Condutores de Turismo</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Agências de Turismo"
+                    href="A-Cidade/Agencias-de-turismo/">Agências de Turismo</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Eventos"
+                    href="A-Cidade/Eventos/">Eventos</a></li>
+                                          <li><a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para o site da Prefeitura"
+                      href="https://www.barradogarcas.mt.gov.br/" target="_blank" rel="noopener noreferer ">Prefeitura</a></li>
+                                      </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Como Chegar
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Aeroporto de Barra do Garças"
+                    href="Como-Chegar/Aeroporto/">Aeroporto de Barra do Garças</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Rodoviária de Barra do Garças"
+                    href="Como-Chegar/Rodoviaria/">Rodoviária de Barra do Garças</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Pontos Turísticos"
+                  class="nav-link " href="Pontos-Turisticos/">
+                    Pontos Turísticos
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para o link Barra Delivery"
+                  class="nav-link " href="Barra-Delivery/" >
+                    Barra Delivery
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para o link Barra Mobilidade"
+                  class="nav-link " href="Barra-Mobilidade/" >
+                    Barra Mobilidade
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Fale conosco"
+                  class="nav-link " href="Fale-Conosco/">
+                    Fale conosco
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalsearch">
+                    <i class="bi bi-search"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </article>
+      </div>
+    </section>
+  </section>
+</div>
+<section class="container-fluid fluid-mobile-menu " aria-labelledby="section-label-mobile-menu">
+  <div class="" id="section-label-mobile-menu">
+      <section class="container container-mobile">
+          <div class="row">
+              <article class="col-4 col-box active">
+                  <a href="">
+                      <figure>
+                          <img class="img-fluid svg" src="images/menu_inicio.svg" alt="Início">
+                      </figure>
+                      <h2 class="nome">Início</h2>
+                  </a>
+              </article>
+              <article class="col-4 col-box ">
+                  <a  href="Fale-Conosco/" >
+                      <figure>
+                          <img class="img-fluid svg" src="images/menu_contato.svg" alt="Contato">
+                      </figure>
+                      <h2 class="nome">Fale Conosco</h2>
+                  </a>
+              </article>
+              <article class="col-4 col-box ">
+                  <a href="Menu/">
+                      <figure>
+                          <img class="img-fluid svg" src="images/menu.svg" alt="Menu">
+                      </figure>
+                      <h2 class="nome">Menu</h2>
+                  </a>
+              </article>
+          </div>
+      </section>
+  </div>
+</section>
+<div class="modal-padrao modal fade" id="modalsearch" tabindex="-1" aria-labelledby="modalsearchLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">  
+      <div class="container modal-content">
+        <div class="modal-header">
+          <div class="search-text-box">
+            <h2>Pesquisa</h2>
+            <p>Encontre o que você procura</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
+        </div>
+        <div class="modal-body">
+          <form action="Pesquisa/" method="post">
+            <div class="form-group form-group-padrao">
+              <label><i class="fas fa-search"></i></label>
+              <input id="input_pesquisa_indexmodal" type="text" name="input_pesquisa_index" class="form-control" placeholder="Pesquise aqui" autocomplete="off" required="">
+              <button type="submit" class="btn-padrao btn-efeito button--calypso"><span>Pesquisar</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  </header>
+  <header class="container-fluid  breadcrumbs_capa">
+    <section class="container-fluid fluid-breadcrumbs "  aria-labelledby="section-label-breadcrumbs">
+      <div class="" id="section-label-breadcrumbs">
+          <div class="container">
+          <div class="row">
+              <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item "  aria-current="page">Página Inicial</li>                    </ol>
+                </nav>
+              </div>
+          </div>
+          </div>
+      </div>
+    </section>
+  </header>
+  
+	<main class="container-fluid " id="content-main">
+      <!-- Conteúdo -->
+      
+<!--SLIDER PRINCIPAL-->
+<section class="container-fluid container-slider" aria-labelledby="section-label-one-slider">
+    <div class="col" id="section-label-one-slider">
+        <div class="row">
+            <div class="col slider-top-solo">
+                                    <div class="col-box">
+                        <div class="masc"></div>
+                        <img class="img-fluid w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/84.png&w=1900&h=995&zc=1" alt="Imagem Descubra o melhor do turismo com nossos Guias e Condutores experientes">
+                        <section class="container">
+                            <article class="col-12 col-md-12 col-lg-5 col-xl-4 col-dados">
+                                <div class="col-text">
+                                    <h2 class="municipio">Barra do Garças</h2>
+                                    <h2 class="titulo">Descubra o melhor do turismo com nossos Guias e Condutores experientes</h2>
+                                    <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Descubra o melhor do turismo c…"
+                                     class="btn-padrao--white" href="/A-Cidade/Guias-Condutores-Turismo/" target="_blank" rel="noopener noreferrer" >Saiba mais</a>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                            </div>
+        </div>
+    </div>
+    <div class="row-redes">
+        <section class="container container-redes">
+            <div class="row">
+                <article class="col-12 col-md-5 col-lg-4">
+                                        <ul class="col-redes">
+                                                    <li>
+                                <a href="https://www.facebook.com/prefeiturabarradogarcas" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.instagram.com/secturbg/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.youtube.com/@SECOMBG/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                                            </ul>
+                                    </article>
+                <article class="col-12 col-md-6 col-lg-6 ms-auto">
+                    <div class="row slider-top-pequeno">
+                                                    <div class="col col-pequeno">
+                                <img class="img-fluid w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/84.png&w=147&h=147&zc=1" alt="Imagem Descubra o melhor do turismo com nossos Guias e Condutores experientes">
+                            </div>
+                                            </div>
+                </article>
+            </div>
+        </section>
+    </div>
+</section>
+<script>
+    $('.slider-top-solo').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-top-pequeno'
+    });
+    $('.slider-top-pequeno').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-top-solo',
+        dots: false,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        // centerMode: true,
+        focusOnSelect: true,
+        prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="bi bi-arrow-right"></i></button>',
+        nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="bi bi-arrow-left"></i></button>',
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+    });
+</script>
+    <section class="container-fluid container-pontos-turisticos" aria-labelledby="section-label-pontos-turisticos">
+        <div class="" id="section-label-pontos-turisticos">
+            <section class="container">
+                <dvi class="row">
+                    <article class="col-12 col-vinheta-padrao">
+                        <h1 class="visually-hidden">Pontos Turísticos</h1>
+                        <h2 class="col-titulo">
+                            O que fazer
+                        </h2>
+                    </article>
+                </dvi>
+                <div class="row">
+                                            <article class="col-12 col-md-6 col-lg-3 col-pontos-turisticos">
+                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Parque das Águas Quentes"
+                            href="Pontos-Turisticos/Parque-das-aguas-quentes-1">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="mask-padrao"></div>
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/67.jpg&w=564&h=264&zc=1" alt="Parque das Águas Quentes">
+                                        </figure>
+                                        <h2 class="col-titulo">Parque das Águas Quentes</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                                             <article class="col-12 col-md-6 col-lg-3 col-pontos-turisticos">
+                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Parque Estadual da Serra Azul"
+                            href="Pontos-Turisticos/Parque-estadual-da-serra-azul-2">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="mask-padrao"></div>
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/136.jpg&w=564&h=264&zc=1" alt="Parque Estadual da Serra Azul">
+                                        </figure>
+                                        <h2 class="col-titulo">Parque Estadual da Serra Azul</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                                                                 <article class="col-12 col-md-6 col-lg-6 col-pontos-turisticos">
+                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Discoporto"
+                            href="Pontos-Turisticos/Discoporto-13">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="mask-padrao"></div>
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/427.jpg&w=554&h=234&zc=1" alt="Discoporto">
+                                        </figure>
+                                        <h2 class="col-titulo">Discoporto</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                                                                 <article class="col-12 col-md-6 col-lg-4 col-pontos-turisticos">
+                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Praia do Bosque"
+                            href="Pontos-Turisticos/Praia-do-bosque-10">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="mask-padrao"></div>
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/156.jpg&w=562&h=264&zc=1" alt="Praia do Bosque">
+                                        </figure>
+                                        <h2 class="col-titulo">Praia do Bosque</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                                             <article class="col-12 col-md-6 col-lg-4 col-pontos-turisticos">
+                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Porto do Baé"
+                            href="Pontos-Turisticos/Porto-do-bae-4">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="mask-padrao"></div>
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/36.jpg&w=562&h=264&zc=1" alt="Porto do Baé">
+                                        </figure>
+                                        <h2 class="col-titulo">Porto do Baé</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                                             <article class="col-12 col-md-6 col-lg-4 col-pontos-turisticos">
+                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Fazenda Recanto da Serra"
+                            href="Pontos-Turisticos/Fazenda-recanto-da-serra-11">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="mask-padrao"></div>
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/326.jpg&w=562&h=264&zc=1" alt="Fazenda Recanto da Serra">
+                                        </figure>
+                                        <h2 class="col-titulo">Fazenda Recanto da Serra</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                                                                 <article class="col-12 col-md-6 col-lg-6 col-pontos-turisticos">
+                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Complexo de Cachoeiras do Bate…"
+                            href="Pontos-Turisticos/Complexo-de-cachoeiras-do-bateia-18">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="mask-padrao"></div>
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/678.jpeg&w=554&h=234&zc=1" alt="Complexo de Cachoeiras do Bateia">
+                                        </figure>
+                                        <h2 class="col-titulo">Complexo de Cachoeiras do Bate…</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                                                                 <article class="col-12 col-md-6 col-lg-3 col-pontos-turisticos">
+                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Estância Favo de Mel"
+                            href="Pontos-Turisticos/Estancia-favo-de-mel-9">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="mask-padrao"></div>
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/120.jpg&w=564&h=234&zc=1" alt="Estância Favo de Mel">
+                                        </figure>
+                                        <h2 class="col-titulo">Estância Favo de Mel</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                                             <article class="col-12 col-md-6 col-lg-3 col-pontos-turisticos">
+                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Complexo Paz e Vitória"
+                            href="Pontos-Turisticos/Complexo-paz-e-vitoria-19">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="mask-padrao"></div>
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/685.jpeg&w=564&h=234&zc=1" alt="Complexo Paz e Vitória">
+                                        </figure>
+                                        <h2 class="col-titulo">Complexo Paz e Vitória</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                                                                  <article class="col-12 col-md-6 col-lg-4 col-pontos-turisticos">
+                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Cachoeira Água Limpa"
+                            href="Pontos-Turisticos/Cachoeira-agua-limpa-14">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="mask-padrao"></div>
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/448.jpg&w=562&h=264&zc=1" alt="Cachoeira Água Limpa">
+                                        </figure>
+                                        <h2 class="col-titulo">Cachoeira Água Limpa</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                                             <article class="col-12 col-md-6 col-lg-4 col-pontos-turisticos">
+                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Cachoeira Cristal"
+                            href="Pontos-Turisticos/Cachoeira-cristal-12">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="mask-padrao"></div>
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/357.jpg&w=562&h=264&zc=1" alt="Cachoeira Cristal">
+                                        </figure>
+                                        <h2 class="col-titulo">Cachoeira Cristal</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                                             <article class="col-12 col-md-6 col-lg-4 col-pontos-turisticos">
+                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Cachoeira Paraíso"
+                            href="Pontos-Turisticos/Cachoeira-paraiso-15">
+                                <div class="col-item">
+                                    <div class="info">
+                                        <div class="mask-padrao"></div>
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/469.jpg&w=562&h=264&zc=1" alt="Cachoeira Paraíso">
+                                        </figure>
+                                        <h2 class="col-titulo">Cachoeira Paraíso</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                                     </div>
+                <div class="row">
+                    <article class="col-12 col-md-5 col-lg-4 col-xl-3 m-auto">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Ver mais pontos turísticos"
+                        href="Pontos-Turisticos/" class="btn-padrao btn-efeito button--calypso"><span>Ver mais pontos turísticos</span></a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </section>
+<section class="container-fluid container-onde-fica" aria-labelledby="section-label-onde-fica">
+    <div class="" id="section-label-onde-fica">
+        <section class="container">
+            <dvi class="row">
+                <article class="col-12 col-vinheta-padrao">
+                    <h1 class="visually-hidden">Hospedagem</h1>
+                    <h2 class="col-titulo--secundario">
+                        Onde ficar
+                    </h2>
+                </article>
+            </dvi>
+            <div class="row row-onde-fica-slick">
+                                    <article class=" col-hospedagem">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página IBIS hotel" 
+                        href="A-Cidade/Hospedagem/Ibis-hotel--11">
+                            <div class="col-item">
+                                <div class="info">
+                                    <figure class="figure">
+                                        <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/596.jpg&w=346&h=190&zc=1" alt="IBIS hotel ">
+                                    </figure>
+                                    <h2 class="col-titulo">IBIS hotel</h2>
+                                    <h2 class="col-texto">Vibrante hotel econ&ocirc;mico, aberto a todos</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class=" col-hospedagem">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Serra Azul Plaza Hotel" 
+                        href="A-Cidade/Hospedagem/Serra-azul-plaza-hotel-8">
+                            <div class="col-item">
+                                <div class="info">
+                                    <figure class="figure">
+                                        <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/546.jpg&w=346&h=190&zc=1" alt="Serra Azul Plaza Hotel">
+                                    </figure>
+                                    <h2 class="col-titulo">Serra Azul Plaza Hotel</h2>
+                                    <h2 class="col-texto">Descubra o aconchego e a hospitalidade no cora&ccedil;&atilde;o de Barra do Gar&cce…</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class=" col-hospedagem">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Pousada Sol do Araguaia" 
+                        href="A-Cidade/Hospedagem/Pousada-sol-do-araguaia-4">
+                            <div class="col-item">
+                                <div class="info">
+                                    <figure class="figure">
+                                        <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/86.jpg&w=346&h=190&zc=1" alt="Pousada Sol do Araguaia">
+                                    </figure>
+                                    <h2 class="col-titulo">Pousada Sol do Araguaia</h2>
+                                    <h2 class="col-texto">Conforto e excel&ecirc;ncia no atendimento ao cliente</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class=" col-hospedagem">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Pousada Casa Grande" 
+                        href="A-Cidade/Hospedagem/Pousada-casa-grande--9">
+                            <div class="col-item">
+                                <div class="info">
+                                    <figure class="figure">
+                                        <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/656.png&w=346&h=190&zc=1" alt="Pousada Casa Grande ">
+                                    </figure>
+                                    <h2 class="col-titulo">Pousada Casa Grande</h2>
+                                    <h2 class="col-texto">A Pousada Casa Grande &eacute; uma excelente escolha para quem deseja estar perto d…</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class=" col-hospedagem">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Pousada Tropical" 
+                        href="A-Cidade/Hospedagem/Pousada-tropical--10">
+                            <div class="col-item">
+                                <div class="info">
+                                    <figure class="figure">
+                                        <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/574.JPG&w=346&h=190&zc=1" alt="Pousada Tropical ">
+                                    </figure>
+                                    <h2 class="col-titulo">Pousada Tropical</h2>
+                                    <h2 class="col-texto">A Pousada Tropical&nbsp;foi constru&iacute;da para oferecer aos&nbsp;nossos h&oacut…</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class=" col-hospedagem">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Araguaia Hotel" 
+                        href="A-Cidade/Hospedagem/Araguaia-hotel-12">
+                            <div class="col-item">
+                                <div class="info">
+                                    <figure class="figure">
+                                        <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/604.png&w=346&h=190&zc=1" alt="Araguaia Hotel">
+                                    </figure>
+                                    <h2 class="col-titulo">Araguaia Hotel</h2>
+                                    <h2 class="col-texto">O Araguaia Hotel oferece uma experi&ecirc;ncia incompar&aacute;vel em hospedagens c…</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class=" col-hospedagem">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Pousada Águas Quentes" 
+                        href="A-Cidade/Hospedagem/Pousada-aguas-quentes-13">
+                            <div class="col-item">
+                                <div class="info">
+                                    <figure class="figure">
+                                        <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/623.jpg&w=346&h=190&zc=1" alt="Pousada Águas Quentes">
+                                    </figure>
+                                    <h2 class="col-titulo">Pousada Águas Quentes</h2>
+                                    <h2 class="col-texto">Um verdadeiro espa&ccedil;o de tranquilidade.</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class=" col-hospedagem">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Hotel Colombo" 
+                        href="A-Cidade/Hospedagem/Hotel-colombo-14">
+                            <div class="col-item">
+                                <div class="info">
+                                    <figure class="figure">
+                                        <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/640.jpeg&w=346&h=190&zc=1" alt="Hotel Colombo">
+                                    </figure>
+                                    <h2 class="col-titulo">Hotel Colombo</h2>
+                                    <h2 class="col-texto">Novo conceito de Hotelaria em Barra do Gar&ccedil;as. Hotel Colombo, sua casa, long…</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class=" col-hospedagem">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Esplanada Palace Hotel" 
+                        href="A-Cidade/Hospedagem/Esplanada-palace-hotel-15">
+                            <div class="col-item">
+                                <div class="info">
+                                    <figure class="figure">
+                                        <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/706.jpeg&w=346&h=190&zc=1" alt="Esplanada Palace Hotel">
+                                    </figure>
+                                    <h2 class="col-titulo">Esplanada Palace Hotel</h2>
+                                    <h2 class="col-texto">Conforto e praticidade para explorar Barra do Gar&ccedil;as no centro da cidade.</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class=" col-hospedagem">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Pousada Arara Azul" 
+                        href="A-Cidade/Hospedagem/Pousada-arara-azul--16">
+                            <div class="col-item">
+                                <div class="info">
+                                    <figure class="figure">
+                                        <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/705.jpeg&w=346&h=190&zc=1" alt="Pousada Arara Azul ">
+                                    </figure>
+                                    <h2 class="col-titulo">Pousada Arara Azul</h2>
+                                    <h2 class="col-texto"></h2>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                            </div>
+            <div class="row">
+                <article class="col-12 col-md-5 col-lg-4 col-xl-3 m-auto">
+                    <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Ver mais hospedagens"
+                    href="A-Cidade/Hospedagem/" class="btn-padrao--secundario btn-efeito button--calypso--secundario"><span>Ver mais hospedagens</span></a>
+                </article>
+            </div>
+        </section>
+    </div>
+</section>
+<section class="container-fluid container-gastronomia" aria-labelledby="section-label-gastronomia">
+    <div class="" id="section-label-gastronomia">
+        <section class="container">
+            <dvi class="row">
+                <article class="col-12 col-vinheta-padrao">
+                    <h1 class="visually-hidden">Restaurantes</h1>
+                    <h2 class="col-titulo">
+                        Gastronomia
+                    </h2>
+                </article>
+            </dvi>
+            <div class="row row-gastronomia-slick">
+                                    <article class=" col-gastronomia">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Tucunaré na Telha"
+                        href="A-Cidade/Gastronomia/Tucunare-na-telha-1">
+                            <div class="col-item">
+                                <div class="row">
+                                    <article class="col-12 col-md-12 col-lg-4">
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/174.jpg&w=325&h=325&zc=1" alt="">
+                                        </figure>
+                                    </article>
+                                    <article class="col-12 col-md-12 col-lg-8">
+                                        <h2 class="col-titulo">Tucunaré na Telha</h2>
+                                        <h2 class="col-desc">Gastronomia &agrave;s margens do Araguaia!</h2>
+                                        <h2 class="col-categoria">Restaurantes</h2>
+                                    </article>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class=" col-gastronomia">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Lago da Serra"
+                        href="A-Cidade/Gastronomia/Lago-da-serra-3">
+                            <div class="col-item">
+                                <div class="row">
+                                    <article class="col-12 col-md-12 col-lg-4">
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/209.jpg&w=325&h=325&zc=1" alt="">
+                                        </figure>
+                                    </article>
+                                    <article class="col-12 col-md-12 col-lg-8">
+                                        <h2 class="col-titulo">Lago da Serra</h2>
+                                        <h2 class="col-desc">Pesca, lazer e sabor!</h2>
+                                        <h2 class="col-categoria">Restaurantes de Pescados</h2>
+                                    </article>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class=" col-gastronomia">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Lótus Sushi"
+                        href="A-Cidade/Gastronomia/Lotus-sushi-5">
+                            <div class="col-item">
+                                <div class="row">
+                                    <article class="col-12 col-md-12 col-lg-4">
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/404.jpg&w=325&h=325&zc=1" alt="">
+                                        </figure>
+                                    </article>
+                                    <article class="col-12 col-md-12 col-lg-8">
+                                        <h2 class="col-titulo">Lótus Sushi</h2>
+                                        <h2 class="col-desc">Aut&ecirc;ntica culin&aacute;ria japonesa!</h2>
+                                        <h2 class="col-categoria">Restaurantes Orientais</h2>
+                                    </article>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class=" col-gastronomia">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Buteco do Bicudo"
+                        href="A-Cidade/Gastronomia/Buteco-do-bicudo-6">
+                            <div class="col-item">
+                                <div class="row">
+                                    <article class="col-12 col-md-12 col-lg-4">
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/495.png&w=325&h=325&zc=1" alt="">
+                                        </figure>
+                                    </article>
+                                    <article class="col-12 col-md-12 col-lg-8">
+                                        <h2 class="col-titulo">Buteco do Bicudo</h2>
+                                        <h2 class="col-desc">Refer&ecirc;ncia em pescados desde 1988!</h2>
+                                        <h2 class="col-categoria">Restaurantes de Pescados</h2>
+                                    </article>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class=" col-gastronomia">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Emporium Colonial"
+                        href="A-Cidade/Gastronomia/Emporium-colonial-9">
+                            <div class="col-item">
+                                <div class="row">
+                                    <article class="col-12 col-md-12 col-lg-4">
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/727.jpeg&w=325&h=325&zc=1" alt="">
+                                        </figure>
+                                    </article>
+                                    <article class="col-12 col-md-12 col-lg-8">
+                                        <h2 class="col-titulo">Emporium Colonial</h2>
+                                        <h2 class="col-desc">Vinhos, queijos e experi&ecirc;ncias!</h2>
+                                        <h2 class="col-categoria">Empórios e Adegas</h2>
+                                    </article>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                            </div>
+            <div class="row">
+                <article class="col-12 col-md-5 col-lg-4 col-xl-3 m-auto">
+                    <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Ver mais restaurantes"
+                    href="A-Cidade/Gastronomia/" class="btn-padrao btn-efeito button--calypso"><span>Ver mais restaurantes</span></a>
+                </article>
+            </div>
+        </section>
+    </div>
+</section>
+<section class="container-fluid container-eventos" aria-labelledby="section-label-eventos">
+    <div class="" id="section-label-eventos">
+        <section class="container">
+            <dvi class="row">
+                <article class="col-12 col-vinheta-padrao">
+                    <h1 class="visually-hidden">Eventos</h1>
+                    <h2 class="col-titulo--secundario">
+                        Eventos
+                    </h2>
+                </article>
+            </dvi>
+            <div class="row">
+                                    <article class="col-12 col-md-6 col-eventos">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Temporada de Praia do Bos…"
+                        href="A-Cidade/Eventos/Temporada-de-praia-do-bosque-2026-19">
+                            <div class="col-item">
+                                <div class="row">
+                                    <article class="col-12 col-md-12 col-lg-6 order-0">
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/725.jpeg&w=375&h=380&zc=1" alt="">
+                                        </figure>
+                                    </article>
+                                    <article class="col-12 col-md-12 col-lg-6 order-1">
+                                        <h2 class="col-data">28/06/2026</h2>
+                                        <h4 class="col-titulo">Temporada de Praia d…</h4>
+                                        <h5 class="col-desc">VEM A&Iacute;... MAIS UMA EDI&Ccedil;&Atilde;O DA PRAIA DO BOSQUE!</h2>
+                                        <h3 class="separa-hr"></h3>
+                                        <h4 class="col-local"><i class="bi bi-geo-alt"></i> Bairro Jardim Nova B…</h4>
+                                    </article>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class="col-12 col-md-6 col-eventos">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Réveillon 2026"
+                        href="A-Cidade/Eventos/Reveillon-2026-17">
+                            <div class="col-item">
+                                <div class="row">
+                                    <article class="col-12 col-md-12 col-lg-6 order-0">
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/718.png&w=375&h=380&zc=1" alt="">
+                                        </figure>
+                                    </article>
+                                    <article class="col-12 col-md-12 col-lg-6 order-1">
+                                        <h2 class="col-data">31/12/2025</h2>
+                                        <h4 class="col-titulo">Réveillon 2026</h4>
+                                        <h5 class="col-desc">O melhor R&eacute;veillon do Vale do Araguaia</h2>
+                                        <h3 class="separa-hr"></h3>
+                                        <h4 class="col-local"><i class="bi bi-geo-alt"></i> Porto do Baé</h4>
+                                    </article>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class="col-12 col-md-6 col-eventos">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página IV Encontro de Motociclis…"
+                        href="A-Cidade/Eventos/Iv-encontro-de-motociclistas---barra-motors-show--15">
+                            <div class="col-item">
+                                <div class="row">
+                                    <article class="col-12 col-md-12 col-lg-6 order-0">
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/710.jpeg&w=375&h=380&zc=1" alt="">
+                                        </figure>
+                                    </article>
+                                    <article class="col-12 col-md-12 col-lg-6 order-1">
+                                        <h2 class="col-data">05/09/2025</h2>
+                                        <h4 class="col-titulo">IV Encontro de Motoc…</h4>
+                                        <h5 class="col-desc">Prepare-se para vivenciar um evento de &ldquo;outro planeta&rdquo;</h2>
+                                        <h3 class="separa-hr"></h3>
+                                        <h4 class="col-local"><i class="bi bi-geo-alt"></i> Porto do Baé</h4>
+                                    </article>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class="col-12 col-md-6 col-eventos">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Temporada de Praia do Bos…"
+                        href="A-Cidade/Eventos/Temporada-de-praia-do-bosque-2025-14">
+                            <div class="col-item">
+                                <div class="row">
+                                    <article class="col-12 col-md-12 col-lg-6 order-0">
+                                        <figure class="figure">
+                                            <img class="img-fluid d-block w-100" src="phpThumb/phpThumb.php?src=fotos_bancoimagens/703.jpg&w=375&h=380&zc=1" alt="">
+                                        </figure>
+                                    </article>
+                                    <article class="col-12 col-md-12 col-lg-6 order-1">
+                                        <h2 class="col-data">28/06/2025</h2>
+                                        <h4 class="col-titulo">Temporada de Praia d…</h4>
+                                        <h5 class="col-desc">Vem a&iacute;&nbsp;</h2>
+                                        <h3 class="separa-hr"></h3>
+                                        <h4 class="col-local"><i class="bi bi-geo-alt"></i> Bairro Jardim Nova B…</h4>
+                                    </article>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                            </div>
+            <div class="row">
+                <article class="col-12 col-md-5 col-lg-4 col-xl-3 m-auto">
+                    <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Ver mais eventos"
+                    href="A-Cidade/Eventos/" class="btn-padrao--secundario btn-efeito button--calypso--secundario "><span>Ver mais eventos</span></a>
+                </article>
+            </div>
+        </section>
+    </div>
+</section>
+<section class="container-fluid container-informativo" aria-labelledby="section-label-informativo">
+    <div class="" id="section-label-informativo">
+        <section class="container">
+            <dvi class="row">
+                <article class="col-12 col-vinheta-padrao">
+                    <h1 class="visually-hidden">Notícias</h1>
+                    <h2 class="col-titulo">
+                        Notícias
+                    </h2>
+                </article>
+            </dvi>
+            <div class="row">
+                                    <article class="col-12 col-md-6 col-lg-4 m-auto col-informativo">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Temporada de praia: Em julho, atrativos de Barra do Ga…"
+                            href="A-Cidade/Noticias/Temporada-de-praia-em-julho-atrativos-de-barra-do-garcas-receberam-quase-90-mil-visitantes-9">
+                            <div class="col-item">
+                                <div class="info">
+                                    <h2 class="col-data">22/08/2023</h2>
+                                    <h2 class="col-titulo">Temporada de praia: Em julho, atrativos de Barra do Ga…</h2>
+                                    <h2 class="col-texto">Em julho, m&ecirc;s de f&eacute;rias e de temporada de praia, Barra do Gar&ccedil;as recebeu 88.716 visitantes, uma m&ea…</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class="col-12 col-md-6 col-lg-4 m-auto col-informativo">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Com os principais pontos turísticos mapeados, Inventár…"
+                            href="A-Cidade/Noticias/Com-os-principais-pontos-turisticos-mapeados-inventario-e-plano-de-turismo-sao-apresentados-em-evento-do-sebrae-e-prefeitura-8">
+                            <div class="col-item">
+                                <div class="info">
+                                    <h2 class="col-data">22/08/2023</h2>
+                                    <h2 class="col-titulo">Com os principais pontos turísticos mapeados, Inventár…</h2>
+                                    <h2 class="col-texto">A Prefeitura de Barra do Gar&ccedil;as e o Servi&ccedil;o Brasileiro de Apoio &agrave;s Micro e Pequenas Empresas (Sebra…</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                                    <article class="col-12 col-md-6 col-lg-4 m-auto col-informativo">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Praia do Bosque: Prefeitura de Barra do Garças divulga…"
+                            href="A-Cidade/Noticias/Praia-do-bosque-prefeitura-de-barra-do-garcas-divulga-programacao-para-temporada-de-praia-2023-7">
+                            <div class="col-item">
+                                <div class="info">
+                                    <h2 class="col-data">10/07/2023</h2>
+                                    <h2 class="col-titulo">Praia do Bosque: Prefeitura de Barra do Garças divulga…</h2>
+                                    <h2 class="col-texto">A Prefeitura de Barra do Gar&ccedil;as, por meio da Secretaria Municipal de Turismo, divulgou nesta quarta-feira (05) a…</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                            </div>
+            <div class="row">
+                <article class="col-12 col-md-5 col-lg-4 col-xl-3 m-auto">
+                    <a href="A-Cidade/Noticias/" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Ler mais informativos" class="btn-padrao--secundario btn-efeito button--calypso--secundario"><span>Ler mais informativos</span></a>
+                </article>
+            </div>
+        </section>
+    </div>
+</section>
+<section class="container-fluid container-tempo" aria-labelledby="section-label-tempo">
+    <div class="" id="section-label-tempo">
+        <section class="container">
+            <dvi class="row">
+                <article class="col-12 col-vinheta-padrao">
+                    <h1 class="visually-hidden">Previsão do Tempo</h1>
+                    <h2 class="col-titulo--secundario">
+                        Previsão do Tempo
+                    </h2>
+                </article>
+            </dvi>
+            <link rel="stylesheet" type="text/css" href="css/capa_previsao_tempo.min.css?v=050525">
+<div class="container-fluid weather-fluid">
+  <div class="row">
+    <div class="container">
+      <div class="row weather-row-2">
+        <article class="col-12 col-lg-5 col-xl-4 offset-xl-1">
+          <div class="weather-grafic">
+            <h5>Barra do Garças, MT</h5>
+            <div class="row d-flex justify-content-center">
+              <div class="col-12">
+                <img class="img-fluid weather-card-image" src="images/weather/loading.gif" alt="Previsão do Tempo">
+              </div>
+              <div class="col-12">
+                <h1 class="weather-card-temp hg_temperatura">ºC</h1>
+                <h2 class="weather-card-desc hg_descricao weather-card-padrao1">Carregando...</h2>
+                <hr class="weather-card-line weather-separa">
+              </div>
+              <div class="col-12 col-sun col-card-padrao1">
+                <p class="weather-card-sunrise hg_nascer_do_sol weather-card-padrao1">Carregando...</p>
+                <p class="weather-card-sunset hg_por_do_sol weather-card-padrao1">Carregando...</p>
+              </div>
+              <div class="col-6 col-md-4 col-lg-5 col-xl-3 offset-md-2 offset-lg-2">
+                <div class="row">
+                  <span class="span_umidade span-padrao">
+                    <img class="img-fluid weather-img weather-card-humidity-img svg" src="images/weather/humidity.svg" alt="Umidade">
+                    <p class="weather-card-humidity hg_umidade">%</p>
+                  </span>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-5 col-xl-5">
+                <div class="row">
+                  <span class="span_evento span-padrao">
+                    <img class="img-fluid weather-img weather-card-wind-img svg " src="images/weather/wind.svg" alt="Velocidade do Vento">
+                    <p class="weather-card-wind hg_vento">km/h</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-lg-7 col-xl-6 weather-infos">
+          <h5 class="visually-hidden">Previsão para os próximos 4 dias</h5>
+          <div class="row">
+            <article class="col-12 col-md-6 col-item">
+              <div class="weather-infos-hold">
+                <h2 class="weather-infos-day hg_data_proximos_0">Carregando...</h2>
+                <h3 class="weather-infos-max-min"><i class="bi bi-thermometer-sun"></i>Max<span class="weather-infos-temp hg_max_proximos_0"></span></h3>
+                <div class="separa-max-min"></div>
+                <h3 class="weather-infos-max-min"><i class="bi bi-thermometer-snow"></i>Min<span class="weather-infos-temp hg_min_proximos_0"></span></h3>
+                <h2 class="weather-infos-desc hg_descricao_proximos_0">Carregando...</h2>
+              </div>
+            </article>
+            <article class="col-12 col-md-6 col-item">
+              <div class="weather-infos-hold">
+                <h2 class="weather-infos-day hg_data_proximos_1">Carregando...</h2>
+                <h3 class="weather-infos-max-min"><i class="bi bi-thermometer-sun"></i>Max<span class="weather-infos-temp hg_max_proximos_1"></span></h3>
+                <div class="separa-max-min"></div>
+                <h3 class="weather-infos-max-min"><i class="bi bi-thermometer-snow"></i>Min<span class="weather-infos-temp hg_min_proximos_1"></span></h3>
+                <h2 class="weather-infos-desc hg_descricao_proximos_1">Carregando...</h2>
+              </div>
+            </article>
+            <article class="col-12 col-md-6 col-item">
+              <div class="weather-infos-hold">
+                <h2 class="weather-infos-day hg_data_proximos_2">Carregando...</h2>
+                <h3 class="weather-infos-max-min"><i class="bi bi-thermometer-sun"></i>Max<span class="weather-infos-temp hg_max_proximos_2"></span></h3>
+                <div class="separa-max-min"></div>
+                <h3 class="weather-infos-max-min"><i class="bi bi-thermometer-snow"></i>Min<span class="weather-infos-temp hg_min_proximos_2"></span></h3>
+                <h2 class="weather-infos-desc hg_descricao_proximos_2">Carregando...</h2>
+              </div>
+            </article>
+            <article class="col-12 col-md-6 col-item">
+              <div class="weather-infos-hold">
+                <h2 class="weather-infos-day hg_data_proximos_3">Carregando...</h2>
+                <h3 class="weather-infos-max-min"><i class="bi bi-thermometer-sun"></i>Max<span class="weather-infos-temp hg_max_proximos_3"></span></h3>
+                <div class="separa-max-min"></div>
+                <h3 class="weather-infos-max-min"><i class="bi bi-thermometer-snow"></i>Min<span class="weather-infos-temp hg_min_proximos_3"></span></h3>
+                <h2 class="weather-infos-desc hg_descricao_proximos_3">Carregando...</h2>
+              </div>
+            </article>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+    // Inicia com a previsao por Geo IP, sem passar as coordenadas
+    atualizarDados('Barradogarcas,MT');
+    // Quando o usuario clicar no botao, obtem os dados de geolocalizacao do navegador.
+    /*$('.obter-localizacao').on('click', function(){
+      // Verifica se o navegador do usuario tem suporte a geolocalizacao
+      if(navigator.geolocation){
+        // Se tiver, solicita os dados e atualiza a previsao do tempo pela API
+        navigator.geolocation.getCurrentPosition(atualizarDados);
+      } else {
+        alert('Seu navegador não suporta geolocalização.');
+      }
+    });*/
+  });
+  function atualizarDados(cidadeUF) {
+    $.ajax({
+      url: 'capa_previsao_ajax.php?cidadeUF='+cidadeUF,
+      dataType: 'json',
+      success: function(dados) {
+        //console.log(dados)
+        // Loop inserindo os dados no HTML
+        $.each(dados, function(dado, valor){
+          $('.'+dado).text(valor);
+        });
+        // Insere a imagem
+        $('.weather-card-image').attr('src', dados.hg_imagem);
+      }
+      ,error: function(error){
+        console.log(error);
+      }
+    });
+  }
+</script>        </section>
+    </div>
+</section>	</main>
+
+  <footer id="content-footer">
+    <section class="container-fluid fluid-footer " aria-labelledby="section-label-footer">
+    <div class="row-footer" id="section-label-footer">
+        <section class="container container-footer">
+            <h3 class="sr-only" >Seção do Rodapé</h3>
+            <div class="row ">
+                <article class="col-12 menu-footer">
+                    <div class="row">
+                        <article class="col-12 col-md-5 col-lg-4 col-xl-3 col-logo">
+                            <a href="" class="logo">
+                                <img class="img-fluid" src="images/logo_topo_site.png" alt="Imagem Logo Footer">
+                            </a>
+                                                        <ul class="col-redes">
+                                                                    <li>
+                                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para Facebook"
+                                        href="https://www.facebook.com/prefeiturabarradogarcas" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para Instagram"
+                                        href="https://www.instagram.com/secturbg/" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para Youtube"
+                                        href="https://www.youtube.com/@SECOMBG/" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                                            </ul>
+                                                    </article>
+                        <article class="col-12 col-md-6 col-lg-6 ms-auto">
+                            <div class="row">
+                                <article class="col-12 col-md-6">
+                                    <h1 class="vinheta-footer">A Cidade</h1>
+                                    <ul class="menu">
+                                        <li class="link-menu">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Sobre a cidade"
+                                            href="A-Cidade/Sobre-a-Cidade/">
+                                                Sobre a cidade
+                                            </a>
+                                        </li>
+                                        <li class="link-menu">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Galeria de vídeos"
+                                            href="A-Cidade/Galeria-de-videos/" rel="noopener noreferrer">
+                                                Galeria de vídeos
+                                            </a>
+                                        </li>
+                                        <li class="link-menu">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Galeria de fotos"
+                                            href="A-Cidade/Galeria-de-fotos/" rel="noopener noreferrer">
+                                                Galeria de fotos
+                                            </a>
+                                        </li>   
+                                        <li class="link-menu">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Telefones e Endereços Úteis"
+                                            href="A-Cidade/Telefones-e-Enderecos-Uteis/" rel="noopener noreferrer">
+                                                Telefones e Endereços Úteis
+                                            </a>
+                                        </li>
+                                        <li class="link-menu">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Informativos"
+                                            href="A-Cidade/Informativos/" rel="noopener noreferrer">
+                                                Informativos
+                                            </a>
+                                        </li>
+                                        <li class="link-menu">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Hospedagem"
+                                            href="A-Cidade/Hospedagem/" rel="noopener noreferrer">
+                                                Hospedagem
+                                            </a>
+                                        </li>   
+                                        <li class="link-menu">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Gastronomia"
+                                            href="A-Cidade/Gastronomia/" rel="noopener noreferrer" >
+                                                Gastronomia
+                                            </a>
+                                        </li>  
+                                        <li class="link-menu">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Eventos"
+                                            href="A-Cidade/Eventos/" rel="noopener noreferrer">
+                                                Eventos
+                                            </a>
+                                        </li>
+                                                                                    <li class="link-menu">
+                                                <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para o site da Prefeitura"
+                                                href="https://www.barradogarcas.mt.gov.br/" rel="noopener noreferrer" target="_blank">
+                                                    Prefeitura
+                                                </a>
+                                            </li>
+                                                  
+                                    </ul>
+                                </article>
+                                <article class="col-12 col-md-6">
+                                <h1 class="vinheta-footer">Como chegar</h1>
+                                    <ul class="menu">
+                                        <li class="link-menu">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página  Rodoviária de Barra do Garças"
+                                            href="Como-Chegar/Rodoviaria/">
+                                                Rodoviária de Barra do Garças
+                                            </a>
+                                        </li>
+                                        <li class="link-menu">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Aeroporto de Barra do Garças"
+                                            href="Como-Chegar/Aeroporto/" rel="noopener noreferrer">
+                                                Aeroporto de Barra do Garças
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="menu">
+                                        <li class="link-menu--bold">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Pontos Turísticos"
+                                            href="Pontos-Turisticos/" rel="noopener noreferrer">
+                                                Pontos Turísticos
+                                            </a>
+                                        </li>
+                                        <li class="link-menu--bold">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Guias e Condutores de Turismo"
+                                            href="A-Cidade/Guias-Condutores-Turismo/" rel="noopener noreferrer">
+                                                Guias e Condutores de Turismo
+                                            </a>
+                                        </li> 
+                                        <li class="link-menu--bold">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Guias e Condutores de Turismo"
+                                            href="A-Cidade/Agencias-de-turismo/" rel="noopener noreferrer">
+                                                Agências de Turismo
+                                            </a>
+                                        </li> 
+                                        <li class="link-menu--bold">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para o link Barra Mobilidade"
+                                            href="Barra-Mobilidade/" >
+                                                Barra Mobilidade
+                                            </a>
+                                        </li>
+
+                                        <li class="link-menu--bold">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para o link Barra Delivery"
+                                            href="Barra-Delivery/" >
+                                                Barra Delivery
+                                            </a>
+                                        </li>
+
+                                        <li class="link-menu--bold">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a página Fale conosco" href="Fale-Conosco/">
+                                                Fale Conosco
+                                            </a>
+                                        </li>                                     
+                                    </ul>
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="container container-direitos">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class=" ">
+                        <h2 class="texto-footer">©2026 - Turismo de Barra do Garças - Todos os direitos reservados</h2 class="texto-footer">
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 col-lg-2 ms-auto">
+                    <div class="row justify-content-center justify-content-md-end">
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir para a site da MPX Brasil"
+                        href="https://www.mpxbrasil.com.br/" target="_blank" rel="noopener noreferrer">
+                            <img class="img-fluid" src="images/logo-mpx.svg" alt="MPX Brasil">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+<section class="container-fluid fluid-footer-img" aria-labelledby="section-label-footer">
+    <div class="mask-footer"></div>
+    <div class="col-img-footer" style="background-image:url(phpThumb/phpThumb.php?src=images/img-footer.jpg&w=1920&h=692&zc=1);"></div>
+</section>  </footer>
+   
+<script src="./js/jquery.cookie.js"></script>
+
+<link rel="stylesheet" href="https://cdn.mpxbrasil.com.br/cookies-lgpd/css/cookies-lgpd.css">
+<!-- Modal -->
+<div class="container-fluid fluid-cookies" id="barra-cookies-lgpd">
+    <div class="col-12 col-md-10 mx-auto container-cookies">
+        <div class="row">
+            <div class="li">
+                <h2 class="card-info-cookie">Este site utiliza cookies para melhorar a experi&ecirc;ncia de navega&ccedil;&atilde;o e disponibilizar funcionalidades adicionais</h2>
+            </div>
+            <div class="li">
+                <button class="w-100 button-alternativo" data-bs-toggle="modal" data-bs-target="#cookiesModaltermos">Termos de uso</button>
+            </div>
+            <div class="li">
+                <button class="w-100 button-alternativo" data-bs-toggle="modal" data-bs-target="#cookiesModalpolitica">Pol&iacute;tica de privacidade</button>
+            </div>
+            <div class="li">
+                <a href="javascript: void(0)" id="aceitar-cookies-lgpd" class="btn-primary btn-padrao-aceitar">Aceitar</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="modal fade modal-cookies" data-backdrop="static" id="cookiesModaltermos" tabindex="-1" role="dialog" aria-labelledby="cookiesModaltermosLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button type="button" class="btn btn-padrao-fechar" data-bs-dismiss="modal" aria-label="Close">
+                        <span>Fechar</span>
+                    </button>
+                    <div class="modal-header header-grande">
+                        <div class="col-box-header">
+                            <p><strong>Termos de Uso</strong></p>
+
+<p><strong>1. Termos</strong></p>
+
+<p>Ao acessar nosso site, o usu&aacute;rio concorda em cumprir estes termos de servi&ccedil;o, todas as leis e regulamentos aplic&aacute;veis ​​e concorda que &eacute; respons&aacute;vel pelo cumprimento de todas as leis locais aplic&aacute;veis. Se voc&ecirc; n&atilde;o concordar com algum desses termos, est&aacute; proibido de usar ou acessar este site. Os materiais contidos neste site s&atilde;o protegidos pelas leis de direitos autorais e marcas comerciais aplic&aacute;veis.</p>
+
+<p><strong>2. Uso de Licen&ccedil;a</strong></p>
+
+<p>&Eacute; concedida permiss&atilde;o para baixar temporariamente uma c&oacute;pia dos materiais (informa&ccedil;&otilde;es ou software) neste site, apenas para visualiza&ccedil;&atilde;o transit&oacute;ria pessoal e n&atilde;o comercial. Esta &eacute; a concess&atilde;o de uma licen&ccedil;a, n&atilde;o uma transfer&ecirc;ncia de t&iacute;tulo e, sob esta licen&ccedil;a, voc&ecirc; n&atilde;o pode:&nbsp;</p>
+
+<p>modificar ou copiar os materiais;&nbsp;</p>
+
+<p>usar os materiais para qualquer finalidade comercial ou para exibi&ccedil;&atilde;o p&uacute;blica (comercial ou n&atilde;o comercial);&nbsp;</p>
+
+<p>tentar descompilar ou fazer engenharia reversa de qualquer software contido neste site;&nbsp;</p>
+
+<p>remover quaisquer direitos autorais ou outras nota&ccedil;&otilde;es de propriedade dos materiais; ou&nbsp;</p>
+
+<p>transferir os materiais para outra pessoa ou &#39;espelhe&#39; os materiais em qualquer outro servidor.</p>
+
+<p>Esta licen&ccedil;a ser&aacute; automaticamente rescindida se voc&ecirc; violar alguma dessas restri&ccedil;&otilde;es e poder&aacute; ser rescindida por n&oacute;s a qualquer momento. Ao encerrar a visualiza&ccedil;&atilde;o desses materiais ou ap&oacute;s o t&eacute;rmino desta licen&ccedil;a, voc&ecirc; deve apagar todos os materiais baixados em sua posse, seja em formato eletr&ocirc;nico ou impresso.</p>
+
+<p><strong>3. Isen&ccedil;&atilde;o de responsabilidade</strong></p>
+
+<p>Os materiais em nosso site s&atilde;o fornecidos &#39;como est&atilde;o&#39;. N&atilde;o oferecemos garantias, expressas ou impl&iacute;citas, e, por este meio, isentamos e negamos todas as outras garantias, incluindo, sem limita&ccedil;&atilde;o, garantias impl&iacute;citas ou condi&ccedil;&otilde;es de comercializa&ccedil;&atilde;o, adequa&ccedil;&atilde;o a um fim espec&iacute;fico ou n&atilde;o viola&ccedil;&atilde;o de propriedade intelectual ou outra viola&ccedil;&atilde;o de direitos.</p>
+
+<p>Al&eacute;m disso, n&atilde;o garantimos qualquer representa&ccedil;&atilde;o relativa &agrave; precis&atilde;o, aos resultados prov&aacute;veis ​​ou &agrave; confiabilidade do uso dos materiais em seu site ou de outra forma relacionado a esses materiais ou em sites vinculados a este site.</p>
+
+<p><strong>4. Limita&ccedil;&otilde;es</strong></p>
+
+<p>Em nenhum caso n&oacute;s, ou nossos fornecedores ser&atilde;o respons&aacute;veis ​​por quaisquer danos (incluindo, sem limita&ccedil;&atilde;o, danos por perda de dados ou lucro ou devido a interrup&ccedil;&atilde;o dos neg&oacute;cios) decorrentes do uso ou da incapacidade de usar os materiais contidos neste site, mesmo que n&oacute;s, ou um representante autorizado tenha sido notificado oralmente ou por escrito da possibilidade de tais danos. Como algumas jurisdi&ccedil;&otilde;es n&atilde;o permitem limita&ccedil;&otilde;es em garantias impl&iacute;citas, ou limita&ccedil;&otilde;es de responsabilidade por danos consequentes ou incidentais, essas limita&ccedil;&otilde;es podem n&atilde;o se aplicar a voc&ecirc;.</p>
+
+<p><strong>5. Precis&atilde;o dos materiais</strong></p>
+
+<p>Os materiais exibidos em nosso site podem incluir erros t&eacute;cnicos, tipogr&aacute;ficos ou fotogr&aacute;ficos. N&atilde;o garantimos que qualquer material em nosso site seja preciso, completo ou atual. Podemos realizar altera&ccedil;&otilde;es nos materiais contidos no site a qualquer momento, sem aviso pr&eacute;vio. No entanto, n&atilde;o nos comprometemos a atualizar os materiais.</p>
+
+<p><strong>6. Links</strong></p>
+
+<p>N&atilde;o analisamos todos os sites que possam estar vinculados a este site, dessa forma, n&atilde;o somos respons&aacute;veis pelo conte&uacute;do de nenhum site vinculado. A inclus&atilde;o de qualquer link n&atilde;o implica nosso endosso do site. O uso de qualquer site vinculado &eacute; por conta e risco do usu&aacute;rio.</p>
+
+<p><strong>Modifica&ccedil;&otilde;es</strong></p>
+
+<p>Podemos revisar estes termos de servi&ccedil;o do site a qualquer momento, sem aviso pr&eacute;vio. Ao usar este site, voc&ecirc; concorda em ficar vinculado &agrave; vers&atilde;o atual desses termos de servi&ccedil;o.</p>
+
+<p><strong>Lei aplic&aacute;vel</strong></p>
+
+<p>Estes termos e condi&ccedil;&otilde;es s&atilde;o regidos e interpretados de acordo com as leis aplic&aacute;veis e voc&ecirc; se submete irrevogavelmente &agrave; jurisdi&ccedil;&atilde;o exclusiva dos tribunais naquele estado ou localidade.</p>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="separa"></div>
+                        <div class="col-box-header">
+                        <p class="title-info">Para desabilitar todos os cookies através do navegador, clique no ícone do seu navegador e siga as instruções:</p>
+<ul class="navegadores">
+    <li>
+        <a href="http://windows.microsoft.com/en-gb/internet-explorer/delete-manage-cookies#ie=ie-11" target="_blank">
+            <img class="img-fluid" src="https://cdn.mpxbrasil.com.br/cookies-lgpd/images/img_ie.svg" alt="IE">
+        </a>
+    </li>
+    <li>
+        <a href="https://support.google.com/accounts/answer/61416?hl=en" target="_blank">
+            <img class="img-fluid" src="https://cdn.mpxbrasil.com.br/cookies-lgpd/images/img_chrome.svg" alt="Chrome">
+        </a>
+    </li>
+    <li>
+        <a href="https://support.mozilla.org/en-GB/kb/enable-and-disable-cookies-website-preferences" target="_blank">
+            <img class="img-fluid" src="https://cdn.mpxbrasil.com.br/cookies-lgpd/images/img_firefox.svg" alt="FireFox">
+        </a>
+    </li>
+    <li>
+        <a href="https://help.opera.com/en/latest/web-preferences/#cookies" target="_blank">
+            <img class="img-fluid" src="https://cdn.mpxbrasil.com.br/cookies-lgpd/images/img_opera.svg" alt="Opera">
+        </a>
+    </li>
+    <li>
+        <a href="https://support.apple.com/pt-pt/guide/safari/sfri11471/mac" target="_blank">
+            <img class="img-fluid" src="https://cdn.mpxbrasil.com.br/cookies-lgpd/images/img_safari.svg" alt="Safari">
+        </a>
+    </li>
+</ul>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal-cookies" data-backdrop="static" id="cookiesModalpolitica" tabindex="-1" role="dialog" aria-labelledby="cookiesModalpoliticaLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button type="button" class="btn btn-padrao-fechar" data-bs-dismiss="modal" aria-label="Close">
+                        <span>Fechar</span>
+                    </button>
+                    <div class="modal-header header-grande">
+                        <div class="col-box-header">
+                            <p><strong>Pol&iacute;tica Privacidade</strong></p>
+
+<p>A sua privacidade &eacute; importante para n&oacute;s. A nossa pol&iacute;tica &eacute; respeitar a sua privacidade em rela&ccedil;&atilde;o a qualquer informa&ccedil;&atilde;o sua que possamos coletar em nosso site, e outros sites que possu&iacute;mos ou operamos.</p>
+
+<p>Solicitamos informa&ccedil;&otilde;es pessoais apenas quando realmente precisamos delas para lhe fornecer um servi&ccedil;o. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Tamb&eacute;m informamos por que estamos coletando e como ser&aacute; usado.</p>
+
+<p>Apenas retemos as informa&ccedil;&otilde;es coletadas pelo tempo necess&aacute;rio para fornecer o servi&ccedil;o solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceit&aacute;veis ​​para evitar perdas e roubos, bem como acesso, divulga&ccedil;&atilde;o, c&oacute;pia, uso ou modifica&ccedil;&atilde;o n&atilde;o autorizados.</p>
+
+<p>N&atilde;o compartilhamos informa&ccedil;&otilde;es de identifica&ccedil;&atilde;o pessoal publicamente ou com terceiros, exceto quando exigido por lei.</p>
+
+<p>O nosso site pode ter links para sites externos que n&atilde;o s&atilde;o operados por n&oacute;s. Esteja ciente de que n&atilde;o temos controle sobre o conte&uacute;do e pr&aacute;ticas desses sites e n&atilde;o podemos aceitar responsabilidade por suas respectivas&nbsp;pol&iacute;ticas de privacidade.</p>
+
+<p>Voc&ecirc; &eacute; livre para recusar a nossa solicita&ccedil;&atilde;o de informa&ccedil;&otilde;es pessoais, entendendo que talvez n&atilde;o possamos fornecer alguns dos servi&ccedil;os desejados.</p>
+
+<p>O uso continuado de nosso site ser&aacute; considerado como aceita&ccedil;&atilde;o de nossas pr&aacute;ticas em torno de privacidade e informa&ccedil;&otilde;es pessoais. Se voc&ecirc; tiver alguma d&uacute;vida sobre como lidamos com dados do usu&aacute;rio e informa&ccedil;&otilde;es pessoais, entre em contato conosco.</p>
+
+<p><br />
+<strong>Normas do Site Oficial</strong></p>
+
+<p>&bull;&nbsp;&nbsp;&nbsp; N&atilde;o transmitir ou divulgar amea&ccedil;as, pornografia infantil, material racista ou qualquer outro que viole a legisla&ccedil;&atilde;o em vigor no pa&iacute;s.<br />
+&bull;&nbsp;&nbsp;&nbsp; N&atilde;o propagar v&iacute;rus de computador, programas invasivos (worms) ou outras formas de programas de computador, auto-replicantes ou n&atilde;o, que causem danos permanentes ou tempor&aacute;rios nos equipamentos do destinat&aacute;rio<br />
+&bull;&nbsp;&nbsp;&nbsp; N&atilde;o transmitir tipos ou quantidades de dados que causem falhas em servi&ccedil;os ou equipamentos na rede do Site PMC ou na Internet<br />
+&bull;&nbsp;&nbsp;&nbsp; N&atilde;o usar a rede para tentar e/ou realizar acesso n&atilde;o autorizado a dispositivos de comunica&ccedil;&atilde;o, informa&ccedil;&atilde;o ou computa&ccedil;&atilde;o<br />
+&bull;&nbsp;&nbsp;&nbsp; N&atilde;o forjar endere&ccedil;os de m&aacute;quinas, de rede ou de correio eletr&ocirc;nico, na tentativa de responsabilizar terceiros ou ocultar a identidade ou autoria<br />
+&bull;&nbsp;&nbsp;&nbsp; N&atilde;o destruir ou corromper dados e informa&ccedil;&otilde;es de outros usu&aacute;rios<br />
+&bull;&nbsp;&nbsp;&nbsp; N&atilde;o violar a privacidade de outros usu&aacute;rios<br />
+&bull;&nbsp;&nbsp;&nbsp; N&atilde;o distribuir, via correio eletr&ocirc;nico, grupos de discuss&atilde;o, f&oacute;runs e formas similares de comunica&ccedil;&atilde;o mensagens n&atilde;o solicitadas do tipo &#39;corrente&#39; e mensagens em massa, comerciais ou n&atilde;o<br />
+&bull;&nbsp;&nbsp;&nbsp; N&atilde;o enviar grande quantidade de mensagens id&ecirc;nticas ao mesmo destinat&aacute;rio por correio eletr&ocirc;nico (mail bombing)<br />
+&bull;&nbsp;&nbsp;&nbsp; N&atilde;o violar copyright ou direito autoral alheio reproduzindo material sem pr&eacute;via autoriza&ccedil;&atilde;o do Site Oficial</p>
+
+<p><br />
+Deve ser ressaltado que quem desobedecer a uma dessas normas pode receber advert&ecirc;ncias e/ou ter o acesso ao site bloqueado. Se houver identifica&ccedil;&otilde;es de crimes previstos em lei, como pornografia infantil, o caso pode ser entregue &agrave;s autoridades de ordem judicial.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Pol&iacute;tica de Cookies </strong></p>
+
+<p><strong>O que s&atilde;o cookies?</strong></p>
+
+<p>Como &eacute; pr&aacute;tica comum em quase todos os sites profissionais, este site usa cookies, que s&atilde;o pequenos arquivos baixados no seu computador, para melhorar sua experi&ecirc;ncia. Esta p&aacute;gina descreve quais informa&ccedil;&otilde;es eles coletam, como as usamos e por que &agrave;s vezes precisamos armazenar esses cookies. Tamb&eacute;m compartilharemos como voc&ecirc; pode impedir que esses cookies sejam armazenados, no entanto, isso pode fazer o downgrade ou &#39;quebrar&#39; certos elementos da funcionalidade do site.</p>
+
+<p><strong>Como usamos os cookies?</strong></p>
+
+<p>Utilizamos cookies por v&aacute;rios motivos, detalhados abaixo. Infelizmente, na maioria dos casos, n&atilde;o existem op&ccedil;&otilde;es padr&atilde;o do setor para desativar os cookies sem desativar completamente a funcionalidade e os recursos que eles adicionam a este site. &Eacute; recomend&aacute;vel que voc&ecirc; deixe todos os cookies se n&atilde;o tiver certeza se precisa ou n&atilde;o deles, caso sejam usados ​​para fornecer um servi&ccedil;o que voc&ecirc; usa.</p>
+
+<p><strong>Desativar cookies</strong></p>
+
+<p>Voc&ecirc; pode impedir a configura&ccedil;&atilde;o de cookies ajustando as configura&ccedil;&otilde;es do seu navegador (consulte a Ajuda do navegador para saber como fazer isso). Esteja ciente de que a desativa&ccedil;&atilde;o de cookies afetar&aacute; a funcionalidade deste e de muitos outros sites que voc&ecirc; visita. A desativa&ccedil;&atilde;o de cookies geralmente resultar&aacute; na desativa&ccedil;&atilde;o de determinadas funcionalidades e recursos deste site. Portanto, &eacute; recomend&aacute;vel que voc&ecirc; n&atilde;o desative os cookies.</p>
+
+<p><strong>Cookies que definimos</strong></p>
+
+<p><strong>Cookies relacionados &agrave; conta</strong><br />
+<br />
+Se voc&ecirc; criar uma conta conosco, usaremos cookies para o gerenciamento do processo de inscri&ccedil;&atilde;o e administra&ccedil;&atilde;o geral. Esses cookies geralmente ser&atilde;o exclu&iacute;dos quando voc&ecirc; sair do sistema, por&eacute;m, em alguns casos, eles poder&atilde;o permanecer posteriormente para lembrar as prefer&ecirc;ncias do seu site ao sair.</p>
+
+<p><strong>Cookies relacionados ao login</strong><br />
+<br />
+Utilizamos cookies quando voc&ecirc; est&aacute; logado, para que possamos lembrar dessa a&ccedil;&atilde;o. Isso evita que voc&ecirc; precise fazer login sempre que visitar uma nova p&aacute;gina. Esses cookies s&atilde;o normalmente removidos ou limpos quando voc&ecirc; efetua logout para garantir que voc&ecirc; possa acessar apenas a recursos e &aacute;reas restritas ao efetuar login.</p>
+
+<p><strong>Cookies relacionados a boletins por e-mail</strong><br />
+<br />
+Este site oferece servi&ccedil;os de assinatura de boletim informativo ou e-mail e os cookies podem ser usados ​​para lembrar se voc&ecirc; j&aacute; est&aacute; registrado e se deve mostrar determinadas notifica&ccedil;&otilde;es v&aacute;lidas apenas para usu&aacute;rios inscritos / n&atilde;o inscritos.</p>
+
+<p><strong>Pedidos processando cookies relacionados</strong><br />
+<br />
+Este site oferece facilidades de com&eacute;rcio eletr&ocirc;nico ou pagamento e alguns cookies s&atilde;o essenciais para garantir que seu pedido seja lembrado entre as p&aacute;ginas, para que possamos process&aacute;-lo adequadamente.</p>
+
+<p><strong>Cookies relacionados a pesquisas</strong><br />
+<br />
+Periodicamente, oferecemos pesquisas e question&aacute;rios para fornecer informa&ccedil;&otilde;es interessantes, ferramentas &uacute;teis ou para entender nossa base de usu&aacute;rios com mais precis&atilde;o. Essas pesquisas podem usar cookies para lembrar quem j&aacute; participou numa pesquisa ou para fornecer resultados precisos ap&oacute;s a altera&ccedil;&atilde;o das p&aacute;ginas.</p>
+
+<p><strong>Cookies relacionados a formul&aacute;rios</strong><br />
+<br />
+Quando voc&ecirc; envia dados por meio de um formul&aacute;rio como os encontrados nas p&aacute;ginas de contacto ou nos formul&aacute;rios de coment&aacute;rios, os cookies podem ser configurados para lembrar os detalhes do usu&aacute;rio para correspond&ecirc;ncia futura.</p>
+
+<p><strong>Cookies de prefer&ecirc;ncias do site</strong><br />
+<br />
+Para proporcionar uma &oacute;tima experi&ecirc;ncia neste site, fornecemos a funcionalidade para definir suas prefer&ecirc;ncias de como esse site &eacute; executado quando voc&ecirc; o usa. Para lembrar suas prefer&ecirc;ncias, precisamos definir cookies para que essas informa&ccedil;&otilde;es possam ser chamadas sempre que voc&ecirc; interagir com uma p&aacute;gina for afetada por suas prefer&ecirc;ncias.</p>
+
+<p><strong>Cookies de Terceiros</strong></p>
+
+<p>Em alguns casos especiais, tamb&eacute;m usamos cookies fornecidos por terceiros confi&aacute;veis. A se&ccedil;&atilde;o a seguir detalha quais cookies de terceiros voc&ecirc; pode encontrar atrav&eacute;s deste site.</p>
+
+<p>Este site usa o Google Analytics, que &eacute; uma das solu&ccedil;&otilde;es de an&aacute;lise mais difundidas e confi&aacute;veis ​​da Web, para nos ajudar a entender como voc&ecirc; usa o site e como podemos melhorar sua experi&ecirc;ncia. Esses cookies podem rastrear itens como quanto tempo voc&ecirc; gasta no site e as p&aacute;ginas visitadas, para que possamos continuar produzindo conte&uacute;do atraente.</p>
+
+<p>Para mais informa&ccedil;&otilde;es sobre cookies do Google Analytics, consulte a p&aacute;gina oficial do Google Analytics.</p>
+
+<p>As an&aacute;lises de terceiros s&atilde;o usadas para rastrear e medir o uso deste site, para que possamos continuar produzindo conte&uacute;do atrativo. Esses cookies podem rastrear itens como o tempo que voc&ecirc; passa no site ou as p&aacute;ginas visitadas, o que nos ajuda a entender como podemos melhorar o site para voc&ecirc;.</p>
+
+<p>Periodicamente, testamos novos recursos e fazemos altera&ccedil;&otilde;es subtis na maneira como o site se apresenta. Quando ainda estamos testando novos recursos, esses cookies podem ser usados ​​para garantir que voc&ecirc; receba uma experi&ecirc;ncia consistente enquanto estiver no site, enquanto entendemos quais otimiza&ccedil;&otilde;es os nossos usu&aacute;rios mais apreciam.</p>
+
+<p>&Agrave; medida que vendemos produtos, &eacute; importante entendermos as estat&iacute;sticas sobre quantos visitantes de nosso site realmente compram e, portanto, esse &eacute; o tipo de dados que esses cookies rastrear&atilde;o. Isso &eacute; importante para voc&ecirc;, pois significa que podemos fazer previs&otilde;es de neg&oacute;cios com precis&atilde;o que nos permitem analisar nossos custos de publicidade e produtos para garantir o melhor pre&ccedil;o poss&iacute;vel.</p>
+
+<p><strong>Mais informa&ccedil;&otilde;es</strong></p>
+
+<p>Esperemos que esteja esclarecido e, como mencionado anteriormente, se houver algo que voc&ecirc; n&atilde;o tem certeza se precisa ou n&atilde;o, geralmente &eacute; mais seguro deixar os cookies ativados, caso interaja com um dos recursos que voc&ecirc; usa em nosso site.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type='text/javascript'>//<![CDATA[
+  $(document).ready(function(){
+  // if no cookie
+  if ($.cookie('cookie-lgpd')!="true") {
+      $("#barra-cookies-lgpd").show();
+      $("#aceitar-cookies-lgpd").click(function() {
+          $("#barra-cookies-lgpd").hide();
+          // set the cookie for 24 hours
+          var date = new Date();
+          date.setDate(date.getDate() + 30); 
+          $.cookie('cookie-lgpd', "true", { expires: date });
+      });
+  }
+  });//]]> 
+</script>  <script type="text/javascript" src="js/redirecionamento.js"></script>
+  
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6364087bfbad76f8"></script> -->
+
+</body>
+<!-- Button trigger modal -->
+<div class="col col-acessibilidade">
+    <button type="button" class="btn btn-padrao-acessibilidade" data-bs-toggle="modal" alt="Abrir o menu de Acessibilidade" data-bs-target="#ModalAcessibilidade">
+        <figure>
+            <img class="img-fluid svg" src="images/acessibilidade_icone.svg" alt="Icone da Acessibilidade">
+        </figure>
+        <h2 class="item"> Acessibilidade</h2>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="ModalAcessibilidade" tabindex="-1" aria-labelledby="ModalAcessibilidadeLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalAcessibilidadeLabel">Menu de Acessibilidade <span class="some-mobile">(Ctrl + U)</span></h5>
+                    <button type="button" class="close some-mobile" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group pull-right">
+                        <!-- <input type="text" class="search form-control" placeholder="Pesquise no site">
+                        -->
+                        <input type="text" id="search" class="search form-control" placeholder="Pesquise no site" title="Pesquise no site">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="row list-item" id="list-item">
+                        <!-- <div class="warning no-result">
+                            <h2 ><i class="fa fa-warning"></i> Sem Resultado</h2>
+                        </div> -->
+                        <article class="col-6 col-md-6 item">
+                            <a href="javascript:void(0);" class="aumentarfonte_ativar_desativar" id="aumentartxt">
+                                <span class="span-checked">
+                                    <figure>
+                                        <img src="images/acessibilidade_checked.svg" class="svg" alt="">
+                                    </figure>
+                                </span>
+                                <figure class="col-figure">
+                                    <img class="img-fluid svg aumentartxt" 
+                                    src="images/acessibilidade_aumentar.svg" alt="Aumentar texto">
+                                    <h4 id="aumentarfonte">Aumentar texto</h4>
+                                </figure>
+                            </a>
+                        </article>
+                        <article class="col-6 col-md-6 item">
+                            <a href="javascript:void(0);"  class="espacamentofonte_ativar_desativar">
+                                <span class="span-checked">
+                                    <figure>
+                                        <img src="images/acessibilidade_checked.svg" class="svg" alt="">
+                                    </figure>
+                                </span>
+                                <figure class="col-figure">
+                                    <img class="img-fluid svg espacotxt" 
+                                    src="images/acessibilidade_espacotexto.svg" alt="Espaçamento do texto">
+                                    <h4 id="espacamentofonte">Espaçamento do texto</h4>
+                                </figure>
+                            </a>
+                        </article>
+                        <article class="col-6 col-md-6 item">
+                            <a href="javascript:void(0);" class="vlibras_ativar_desativar">
+                                <span class="span-checked">
+                                    <figure>
+                                        <img src="images/acessibilidade_checked.svg" class="svg" alt="">
+                                    </figure>
+                                </span>
+                                <!-- <figure class="col-figure">
+                                    <div vw class="enabled">
+                                        <div vw-access-button class="active"></div>
+                                        <div vw-plugin-wrapper>
+                                            <div class="vw-plugin-top-wrapper"></div>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid svg vlibras" 
+                                    src="images/acessibilidade_libras.svg" alt="Leitor em Libras">
+                                    <h4>Leitor em Libras</h4>
+                                </figure> -->
+                                <figure class="col-figure">
+                                    <img class="img-fluid svg vlibras" 
+                                    src="images/acessibilidade_libras.svg" alt="Leitor em Libras">
+                                    <h4>Leitor em Libras</h4>
+                                </figure>
+                            </a>
+                        </article>
+                        <article class="col-6 col-md-6 item">
+                            <a href="https://chrome.google.com/webstore/detail/hatemile-for-browser/cgmocdadonifbjlfaeedjdlhghkpfcok?hl=pt-BR" target="_blank" rel="noopener noreferrer">
+                                <span class="span-checked">
+                                    <figure>
+                                        <img src="images/acessibilidade_checked.svg" class="svg" alt="">
+                                    </figure>
+                                </span>
+                                <figure class="col-figure">
+                                    <img class="img-fluid svg leitortela" 
+                                    src="images/acessibilidade_leitortela.svg" alt="Leitor de tela">
+                                    <h4>Leitor de tela</h4>
+                                </figure>
+                            </a>
+                        </article>
+                        <article class="col-6 col-md-6 item">
+                            <a href="javascript:void(0);" id="btn_acessibilidade_contraste">
+                                <span class="span-checked">
+                                    <figure>
+                                        <img src="images/acessibilidade_checked.svg" class="svg" alt="">
+                                    </figure>
+                                </span>
+                                <figure class="col-figure">
+                                    <img class="img-fluid svg altocontraste" 
+                                    src="images/acessibilidade_contraste.svg" alt="Alto contraste">
+                                    <h4 id="btncontraste">Alto contraste</h4>
+                                </figure>
+                            </a>
+                        </article>
+                        <article class="col-6 col-md-6 item">
+                            <a href="javascript:void(0);" class="invertercores_ativar_desativar">
+                                <span class="span-checked">
+                                    <figure>
+                                        <img src="images/acessibilidade_checked.svg" class="svg" alt="">
+                                    </figure>
+                                </span>
+                                <figure class="col-figure">
+                                    <img class="img-fluid svg invertecores" 
+                                    src="images/acessibilidade_invertercores.svg" alt="Inverter cores">
+                                    <h4 id="btninvertecores">Inverter cores</h4>
+                                </figure>
+                            </a>
+                        </article>
+                        <article class="col-6 col-md-6 item">
+                            <a href="javascript:void(0);" class="corpretobranco_ativar_desativar">
+                                <span class="span-checked">
+                                    <figure>
+                                        <img src="images/acessibilidade_checked.svg" class="svg" alt="">
+                                    </figure>
+                                </span>
+                                <figure class="col-figure">
+                                    <img class="img-fluid svg pretobranco" 
+                                    src="images/acessibilidade_pretobranco.svg" alt="Preto e branco">
+                                    <h4 id="btnpretobranco">Preto e branco</h4>
+                                </figure>
+                            </a>
+                        </article>
+                        <article class="col-6 col-md-6 item">
+                            <a href="javascript:void(0);" class="destacarlink_ativar_desativar">
+                                <span class="span-checked">
+                                    <figure>
+                                        <img src="images/acessibilidade_checked.svg" class="svg" alt="">
+                                    </figure>
+                                </span>
+                                <figure class="col-figure">
+                                    <img class="img-fluid svg destacarlink" 
+                                    src="images/acessibilidade_destacarlink.svg" alt="Destacar links">
+                                    <h4 id="destacarlink">Destacar links</h4>
+                                </figure>
+                            </a>
+                        </article>
+                        <article class="col-6 col-md-6 item">
+                            <a href="javascript:void(0);" class="fontcomum_ativar_desativar">
+                                <span class="span-checked">
+                                    <figure>
+                                        <img src="images/acessibilidade_checked.svg" class="svg" alt="">
+                                    </figure>
+                                </span>
+                                <figure class="col-figure">
+                                    <img class="img-fluid svg txtcomum" 
+                                    src="images/acessibilidade_fontecomun.svg" alt="Texto comum">
+                                    <h4 id="btnfontecomum">Texto comum</h4>
+                                </figure>
+                            </a>
+                        </article>
+                        <article class="col-6 col-md-6 item">
+                            <a href="javascript:void(0);" class="dislexia_ativar_desativar" >
+                                <span class="span-checked">
+                                    <figure>
+                                        <img src="images/acessibilidade_checked.svg" class="svg" alt="">
+                                    </figure>
+                                </span>
+                                <figure class="col-figure">
+                                    <img class="img-fluid svg txtdislexia" 
+                                    src="images/acessibilidade_fontedislexia.svg" alt="Texto para dislexia">
+                                    <h4 id="btnfonte">Texto para dislexia</h4>
+                                </figure>
+                            </a>
+                        </article>
+                        <article class="col-6 col-md-6 item">
+                            <a href="javascript:void(0);" class="cursor_ativar_desativar">
+                                <span class="span-checked">
+                                    <figure>
+                                        <img src="images/acessibilidade_checked.svg" class="svg" alt="">
+                                    </figure>
+                                </span>
+                                <figure class="col-figure">
+                                    <img class="img-fluid svg aumentcursor" 
+                                    src="images/acessibilidade_aumentarcursor.svg" alt="Aumentar cursor">
+                                    <h4 id="curso">Aumentar cursor</h4>
+                                </figure>
+                            </a>
+                        </article>
+                        <article class="col-6 col-md-6 item">
+                            <a href="javascript:void(0);" class="linhaleitura_ativar_desativar">
+                                <span class="span-checked">
+                                    <figure>
+                                        <img src="images/acessibilidade_checked.svg" class="svg" alt="">
+                                    </figure>
+                                </span>
+                                <figure class="col-figure">
+                                    <img class="img-fluid svg linhaleitura" 
+                                    src="images/acessibilidade_linhaleitura.svg" alt="Linha para leitura">
+                                    <h4 id="linhaleitura">Linha para leitura</h4>
+                                </figure>
+                            </a>
+                        </article>
+                        <article class="col-6 col-md-6 item">
+                            <a href="javascript:void(0);" class="tooltip_ativar_desativar">
+                                <span class="span-checked">
+                                    <figure>
+                                        <img src="images/acessibilidade_checked.svg" class="svg" alt="">
+                                    </figure>
+                                </span>
+                                <figure class="col-figure">
+                                    <img class="img-fluid svg dicas" 
+                                    src="images/acessibilidade_dicas.svg" alt="Dicas">
+                                    <h4 id ="tooltip">Dicas</h4>
+                                </figure>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row row-footer-modal">
+                        <article class="col-7 col-md-12">
+                            <h4 class="direitos-acessibilidade">
+                                <figure>
+                                    <span>Feito por</span>
+                                    <img class="img-fluid"
+                                    src="images/logo-mpx-padrao.svg"
+                                    alt="Logo - MPX">
+                                </figure>
+                            </h4>
+                        </article>
+                        <article class="col-5 col-btn-mobile-fechar">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                               <span>Fechar</span>
+                                <span class="fechar" aria-hidden="true">&times;</span>
+                            </button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" >
+    $(document).ready(function() {
+        $("#search").keyup(function () {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("search");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("list-item");
+            li = ul.getElementsByClassName("item");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        });
+    });
+</script>
+<div vw class="enabled">
+    <div vw-access-button class="vlibras_click active"></div>
+    <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<!-- <link rel="stylesheet" type="text/css" href="css/index_acessibilidade_padrao.min.css?v=050525"> --></html>

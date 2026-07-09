@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roteiros de Viagem</title>
+  <style>
+    :root {
+      --primary: #2b6cb0;
+      --primary-hover: #2c5282;
+      --bg: #f7fafc;
+      --card-bg: #ffffff;
+      --text: #2d3748;
+      --text-light: #718096;
+    }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #3182ce, #2b6cb0);
+      color: white;
+      width: 100%;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    main {
+      max-width: 1000px;
+      width: 100%;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .trip-card {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+    }
+    .trip-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .trip-image {
+      height: 200px;
+      background-color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .trip-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .trip-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+    }
+    .trip-content {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .trip-content h2 {
+      margin: 0 0 10px;
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+    .trip-content p {
+      margin: 0 0 20px;
+      color: var(--text-light);
+      line-height: 1.5;
+      flex: 1;
+    }
+    .trip-btn {
+      background-color: var(--primary);
+      color: white;
+      padding: 12px;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+    .trip-card:hover .trip-btn {
+      background-color: var(--primary-hover);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Roteiros de Viagem</h1>
+    <p>Selecione um destino para visualizar o planejamento completo</p>
+  </header>
+  <main>
+    <a href="trips/gramado/index.html" class="trip-card">
+      <div class="trip-image">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Lago_Negro_-_Gramado_RS.jpg" alt="Gramado e Região" onerror="this.style.display='none'">
+      </div>
+      <div class="trip-content">
+        <h2>Gramado & Região</h2>
+        <p>Gramado, Canela, Torres e Porto Alegre. Serra gaúcha, parques, museus e litoral.</p>
+        <div class="trip-btn">Acessar Roteiro</div>
+      </div>
+    </a>
+    <a href="trips/barra/index.html" class="trip-card">
+      <div class="trip-image">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Rio_Araguaia_em_Barra_do_Gar%C3%A7as.jpg" alt="Barra do Garças" onerror="this.style.display='none'">
+      </div>
+      <div class="trip-content">
+        <h2>Barra do Garças & Região</h2>
+        <p>Barra do Garças, Pontal do Araguaia, Aragarças e região. Cachoeiras, trilhas e natureza.</p>
+        <div class="trip-btn">Acessar Roteiro</div>
+      </div>
+    </a>
+  </main>
+</body>
+</html>

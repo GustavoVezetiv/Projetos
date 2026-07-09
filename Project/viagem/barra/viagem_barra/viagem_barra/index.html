@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roteiro Visual – Barra do Garças</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Roteiro Visual de Barra do Garças</h1>
+    <p>Explore cachoeiras, mirantes, trilhas e experiências na Serra do Roncador e arredores.</p>
+  </header>
+
+  <section class="filters" id="filters">
+    <div class="filter-group">
+      <label for="search">Pesquisar:</label>
+      <input type="text" id="search" placeholder="Digite o nome do passeio...">
+    </div>
+    <div class="filter-group">
+      <label for="filter-cidade">Cidade/Região:</label>
+      <select id="filter-cidade"><option value="">Todas</option></select>
+    </div>
+    <div class="filter-group">
+      <label for="filter-periodo">Período:</label>
+      <select id="filter-periodo">
+        <option value="">Todos</option>
+        <option value="manhã">Manhã</option>
+        <option value="tarde">Tarde</option>
+        <option value="noite">Noite</option>
+        <option value="dia inteiro">Dia inteiro</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="filter-preco">Valor:</label>
+      <select id="filter-preco">
+        <option value="">Todos</option>
+        <option value="0">Gratuito</option>
+        <option value="50">Até R$ 50</option>
+        <option value="100">Até R$ 100</option>
+        <option value="200">Até R$ 200</option>
+        <option value="201">Acima de R$ 200</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="filter-categoria">Categoria:</label>
+      <select id="filter-categoria"><option value="">Todas</option></select>
+    </div>
+    <div class="filter-group">
+      <label for="filter-dificuldade">Dificuldade:</label>
+      <select id="filter-dificuldade">
+        <option value="">Todas</option>
+        <option value="fácil">Fácil</option>
+        <option value="média">Média</option>
+        <option value="difícil">Difícil</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="filter-guia">Precisa de guia?</label>
+      <select id="filter-guia">
+        <option value="">Todos</option>
+        <option value="sim">Sim</option>
+        <option value="não">Não</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="filter-acesso">Tipo de acesso:</label>
+      <select id="filter-acesso">
+        <option value="">Todos</option>
+        <option value="carro">Carro comum</option>
+        <option value="estrada de chão">Estrada de chão</option>
+        <option value="4x4">4x4</option>
+        <option value="trilha">Trilha</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="sort-by">Ordenar por:</label>
+      <select id="sort-by">
+        <option value="">Padrão</option>
+        <option value="valor">Valor</option>
+        <option value="distancia">Distância</option>
+        <option value="dificuldade">Dificuldade</option>
+        <option value="prioridade">Prioridade</option>
+      </select>
+    </div>
+  </section>
+
+  <main id="cards-container" class="cards-container">
+    <!-- Cards serão renderizados pelo script -->
+  </main>
+
+  <footer>
+    <p>Dados baseados em fontes oficiais e guias locais. Verifique disponibilidade e condições antes da viagem.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

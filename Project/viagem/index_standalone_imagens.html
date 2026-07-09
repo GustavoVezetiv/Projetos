@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roteiro Visual de Viagem</title>
+  <style>
+:root{--blue:#31598d;--blue2:#214776;--bg:#f4f7fb;--card:#fff;--text:#162236;--muted:#5c6d82;--line:#d8e1ee;--tag:#eaf1fb;--accent:#087a6a;--warn:#f7b733}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.hero{background:linear-gradient(135deg,var(--blue),var(--blue2));color:white;text-align:center;padding:30px 16px 26px}.hero h1{margin:0 0 8px;font-size:32px}.hero p{margin:0;opacity:.9;font-weight:600}
+.toolbar{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding:14px 10px;box-shadow:0 4px 18px rgba(31,58,91,.08)}
+.controls{display:grid;grid-template-columns:160px 160px 160px 160px 160px minmax(260px,1fr) 160px;gap:14px;align-items:end;max-width:1580px;margin:0 auto}.control label{display:block;font-size:13px;font-weight:800;color:#254d82;margin-bottom:6px}.control input,.control select{width:100%;height:38px;border:1px solid #cbd7e6;border-radius:6px;background:#fff;padding:0 10px;font-size:14px}.meta{max-width:1580px;margin:10px auto 0;color:#607086;font-size:13px}.meta b{color:#253f65}
+.grid{max-width:1580px;margin:24px auto 40px;padding:0 16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}.card{background:var(--card);border-radius:12px;box-shadow:0 5px 20px rgba(25,45,80,.10);overflow:hidden;display:flex;flex-direction:column;min-height:565px;border:1px solid rgba(220,228,240,.7)}
+.photo{height:220px;background:linear-gradient(135deg,#d9e5f3,#eef4fb);position:relative;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .25s ease}.photo img.ready{opacity:1}.photo .loading,.photo .fallback{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:18px;color:#31598d;font-weight:800;background:linear-gradient(135deg,#dce8f6,#f7fbff)}.photo .fallback small{display:block;margin-top:6px;font-weight:600;color:#64748b}.content{padding:16px;display:flex;flex-direction:column;gap:10px;flex:1}.title{font-size:20px;line-height:1.35;margin:0;color:#204f88}.sub{color:var(--muted);font-size:13px}.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{font-size:12px;color:#27538a;background:var(--tag);padding:5px 8px;border-radius:5px}.row{font-size:14px}.price{font-size:17px;font-weight:900;color:var(--accent)}.prime{font-size:12px;padding:7px 8px;border-radius:5px;background:#ffe8a7;color:#a45d00}.rating{color:#e58300;font-weight:800}.obs{font-size:13px;line-height:1.45;color:#3d4d62;background:#f7f9fc;border-left:4px solid #d7e4f5;padding:9px;border-radius:6px}.actions{display:flex;gap:8px;margin-top:auto}.actions a{flex:1;text-align:center;text-decoration:none;border:1px solid #c8d6e8;border-radius:7px;padding:9px 8px;font-size:13px;font-weight:800;color:#204f88;background:#fff}.actions a:hover{background:#edf4ff}.thumbs{display:flex;gap:8px;margin-top:8px}.thumb{width:54px;height:42px;border-radius:6px;background:#e9f0f8;overflow:hidden;position:relative}.thumb img{width:100%;height:100%;object-fit:cover;display:block}.empty{max-width:900px;margin:45px auto;text-align:center;color:#667085;background:#fff;border-radius:12px;padding:30px;border:1px solid var(--line)}
+@media(max-width:1150px){.controls{grid-template-columns:repeat(3,1fr)}}@media(max-width:720px){.hero h1{font-size:24px}.controls{grid-template-columns:1fr}.grid{grid-template-columns:1fr;padding:0 10px}.toolbar{position:static}.card{min-height:auto}}
+</style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Roteiro Visual de Viagem</h1>
+    <p>Gramado • Canela • Torres • Porto Alegre</p>
+  </header>
+  <section class="toolbar">
+    <div class="controls">
+      <div class="control"><label for="city">Cidade:</label><select id="city"><option value="">Todas</option></select></div>
+      <div class="control"><label for="period">Período:</label><select id="period"><option value="">Todos</option></select></div>
+      <div class="control"><label for="price">Faixa de valor:</label><select id="price"><option value="">Todas</option><option value="free">Gratuito</option><option value="50">Até R$50</option><option value="100">Até R$100</option><option value="200">Até R$200</option><option value="200+">Acima de R$200</option></select></div>
+      <div class="control"><label for="prime">Prime Gourmet:</label><select id="prime"><option value="">Todos</option><option value="sim">Sim</option><option value="provável">Provável</option><option value="não">Não</option></select></div>
+      <div class="control"><label for="category">Categoria:</label><select id="category"><option value="">Todas</option></select></div>
+      <div class="control"><label for="search">Buscar:</label><input id="search" placeholder="Digite o nome do local..."></div>
+      <div class="control"><label for="sort">Ordenar por:</label><select id="sort"><option value="">Nenhum</option><option value="price-asc">Menor preço</option><option value="price-desc">Maior preço</option><option value="rating-desc">Melhor nota</option><option value="distance-asc">Mais perto</option></select></div>
+    </div>
+    <div class="meta"><b id="count"></b> • As fotos dependem de internet, mas o arquivo não precisa importar JSON nem rodar servidor.</div>
+  </section>
+  <main id="grid" class="grid"></main>
+  <script>
+const ATTRACTIONS = [
+  {
+    "id": 1,
+    "name": "Lago Negro / Pedalinho",
+    "city": "Gramado",
+    "category": [
+      "Parque",
+      "Natureza"
+    ],
+    "recommended_period": [
+      "manhã",
+      "tarde"
+    ],
+    "duration_hours": 1.5,
+    "travel_time_minutes": 5,
+    "price_per_person": 0,
+    "price_for_two": 50,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Parque aberto 24h. Pedalinhos funcionam das 8h30 às 18h e custam cerca de R$50 (cisne para 2 pessoas).",
+    "rating": 5,
+    "google_maps": "https://goo.gl/maps/X5X2pMZRd9Y42J5t9",
+    "official_link": null,
+    "price_source": "Gramado Blog【203711377949528†L390-L401】",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/0/00/Lago_Negro_-_Gramado_RS.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Pedalinho%20no%20Lago%20Negro.jpg?width=1000",
+      "https://tse1.mm.bing.net/th?q=Lago%20Negro%20Pedalinho%20Gramado&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Lago%20Negro%20/%20Pedalinho%20Gramado%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 2,
+    "name": "Rua Coberta + Igreja São Pedro + Fonte do Amor Eterno",
+    "city": "Gramado",
+    "category": [
+      "Centro",
+      "Histórico"
+    ],
+    "recommended_period": [
+      "tarde",
+      "noite"
+    ],
+    "duration_hours": 2.5,
+    "travel_time_minutes": 5,
+    "price_per_person": 35,
+    "price_for_two": 35,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Passeio pelo centro de Gramado: Rua Coberta repleta de lojas e restaurantes; Igreja São Pedro e Fonte do Amor Eterno têm acesso gratuito. Cadeados para a fonte custam cerca de R$35-40【176537054762816†L361-L367】.",
+    "rating": 4,
+    "google_maps": "https://goo.gl/maps/fKTLd43fYQmhfqy29",
+    "official_link": null,
+    "price_source": "TripAdvisor【176537054762816†L361-L367】",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Igreja_S%C3%A3o_Pedro_de_Gramado.jpg/960px-Igreja_S%C3%A3o_Pedro_de_Gramado.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Rua%20Coberta%20Gramado.jpg?width=1000",
+      "https://tse1.mm.bing.net/th?q=Rua%20Coberta%20Igreja%20S%C3%A3o%20Pedro%20Fonte%20do%20Amor%20Eterno%20Gramado&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Rua%20Coberta%20%2B%20Igreja%20S%C3%A3o%20Pedro%20%2B%20Fonte%20do%20Amor%20Eterno%20Gramado%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 3,
+    "name": "Mini Mundo",
+    "city": "Gramado",
+    "category": [
+      "Parque",
+      "Miniaturas"
+    ],
+    "recommended_period": [
+      "manhã",
+      "tarde"
+    ],
+    "duration_hours": 2,
+    "travel_time_minutes": 10,
+    "price_per_person": 96,
+    "price_for_two": 192,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Parque de miniaturas ao ar livre. Ingressos: R$96 na bilheteria, R$86 comprando on-line; crianças (3-15 anos) e idosos pagam R$48【172251305533448†L390-L429】.",
+    "rating": 5,
+    "google_maps": "https://goo.gl/maps/h3MgwBG1Ui18T5yZ9",
+    "official_link": "https://minimundo.com.br",
+    "price_source": "Gramado Blog【172251305533448†L390-L429】",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Mini_Mundo_em_setembro_de_2019_%2824%29.jpg/960px-Mini_Mundo_em_setembro_de_2019_%2824%29.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mini%20Mundo%2001.jpg?width=1000",
+      "https://tse1.mm.bing.net/th?q=Mini%20Mundo%20Gramado&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Mini%20Mundo%20Gramado%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 4,
+    "name": "NBA Park",
+    "city": "Gramado",
+    "category": [
+      "Parque",
+      "Temático"
+    ],
+    "recommended_period": [
+      "tarde"
+    ],
+    "duration_hours": 2.5,
+    "travel_time_minutes": 10,
+    "price_per_person": 120,
+    "price_for_two": 240,
+    "prime_gourmet": "provável",
+    "prime_benefit": null,
+    "observation": "Parque indoor temático da NBA com experiências interativas. Ingressos variam entre R$59 e R$169 conforme idade e tipo de bilhete (valores aproximados do PDF).",
+    "rating": 3.8,
+    "google_maps": "https://goo.gl/maps/QqmWNxQWGwo3kij47",
+    "official_link": "https://www.nbaparkgramado.com.br",
+    "price_source": "PDF gramados (valores aproximados: R$59-169)",
+    "images": [
+      "https://tse1.mm.bing.net/th?q=NBA%20Park%20Gramado%20fachada&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=NBA%20Park%20Gramado%20atra%C3%A7%C3%A3o&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=NBA%20Park%20Gramado%20quadra&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=NBA%20Park%20Gramado%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 5,
+    "name": "Space Adventure (Parque da NASA)",
+    "city": "Canela",
+    "category": [
+      "Parque",
+      "Exposição"
+    ],
+    "recommended_period": [
+      "tarde"
+    ],
+    "duration_hours": 2,
+    "travel_time_minutes": 20,
+    "price_per_person": 129.9,
+    "price_for_two": 259.8,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Exposição espacial com itens da NASA. Ingresso antecipado custa R$129,90; preço cheio R$149,90. Parque oferece simuladores, planetário e estacionamento pago de R$25【90950378143138†L70-L124】.",
+    "rating": 4,
+    "google_maps": "https://goo.gl/maps/o5t2JbK6Xbz6M2m87",
+    "official_link": "https://spaceadventure.com.br",
+    "price_source": "Zarpou【90950378143138†L70-L124】",
+    "images": [
+      "https://tse1.mm.bing.net/th?q=Space%20Adventure%20Canela%20parque%20da%20NASA&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Space%20Adventure%20Canela%20Gramado&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Space%20Adventure%20Canela%20exposi%C3%A7%C3%A3o%20NASA&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Space%20Adventure%20%28Parque%20da%20NASA%29%20Canela%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 6,
+    "name": "Skyglass Canela",
+    "city": "Canela",
+    "category": [
+      "Parque",
+      "Mirante"
+    ],
+    "recommended_period": [
+      "manhã",
+      "tarde"
+    ],
+    "duration_hours": 3,
+    "travel_time_minutes": 25,
+    "price_per_person": 99,
+    "price_for_two": 198,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Mirante com passarela de vidro e monotrilho 'Abusado'. Ingresso antecipado para a plataforma custa R$99; combo plataforma+Abusado custa R$159. Crianças (6-12) e idosos pagam R$65【562745051854658†L60-L205】.",
+    "rating": 4.5,
+    "google_maps": "https://goo.gl/maps/P3ceZg1xDpv1E1Ad9",
+    "official_link": "https://www.skyglasscanela.com.br",
+    "price_source": "Melhores Destinos【562745051854658†L60-L205】",
+    "images": [
+      "https://tse1.mm.bing.net/th?q=Skyglass%20Canela%20plataforma&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Skyglass%20Canela%20Abusado&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Skyglass%20Canela%20vidro&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Skyglass%20Canela%20Canela%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 7,
+    "name": "Parque do Caracol",
+    "city": "Canela",
+    "category": [
+      "Parque",
+      "Natureza"
+    ],
+    "recommended_period": [
+      "manhã",
+      "tarde"
+    ],
+    "duration_hours": 3,
+    "travel_time_minutes": 25,
+    "price_per_person": 59.9,
+    "price_for_two": 119.8,
+    "prime_gourmet": "provável",
+    "prime_benefit": null,
+    "observation": "Parque com trilhas e mirantes, incluindo a Cascata do Caracol. Ingressos custam R$49,90 (on-line) ou R$59,90 na bilheteria; estacionamento R$30【120288016625518†L47-L57】.",
+    "rating": 4.5,
+    "google_maps": "https://goo.gl/maps/X31kgzrFZvAQFmAA7",
+    "official_link": "https://parquedocaracol.com.br",
+    "price_source": "SINDEPAT【120288016625518†L47-L57】",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Caracol%20falls%20%282%20April%202008%29.jpg?width=1000",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Cascata%20do%20Caracol%20-%20Canela.jpg?width=1000",
+      "https://tse1.mm.bing.net/th?q=Parque%20do%20Caracol%20Canela%20Cascata&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Parque%20do%20Caracol%20Canela%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 8,
+    "name": "Bondinhos Aéreos Canela",
+    "city": "Canela",
+    "category": [
+      "Parque",
+      "Teleférico"
+    ],
+    "recommended_period": [
+      "manhã"
+    ],
+    "duration_hours": 2,
+    "travel_time_minutes": 25,
+    "price_per_person": 90,
+    "price_for_two": 180,
+    "prime_gourmet": "provável",
+    "prime_benefit": null,
+    "observation": "Teleférico com vista para a Cascata do Caracol. Ingressos: adultos R$90; crianças de 6 a 12 anos e idosos pagam R$45; menores de 5 anos não pagam【428493059760109†L300-L334】.",
+    "rating": 4,
+    "google_maps": "https://goo.gl/maps/SxrCb21XPNXwGwMd6",
+    "official_link": "https://parquesdaserra.com.br",
+    "price_source": "Meus Destinos Imperdíveis【428493059760109†L300-L334】",
+    "images": [
+      "https://tse1.mm.bing.net/th?q=Bondinhos%20A%C3%A9reos%20Canela%20Cascata%20do%20Caracol&w=900&h=550&c=7&rs=1&p=0",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Cascata%20do%20Caracol%20-%20Canela.jpg?width=1000",
+      "https://tse1.mm.bing.net/th?q=Bondinhos%20Canela%20parque&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Bondinhos%20A%C3%A9reos%20Canela%20Canela%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 9,
+    "name": "Vinícola Jolimont",
+    "city": "Canela",
+    "category": [
+      "Vinícola",
+      "Gastronomia"
+    ],
+    "recommended_period": [
+      "tarde"
+    ],
+    "duration_hours": 2.5,
+    "travel_time_minutes": 30,
+    "price_per_person": 149,
+    "price_for_two": 298,
+    "prime_gourmet": "provável",
+    "prime_benefit": null,
+    "observation": "Visitação com degustação de vinhos. Tour tradicional custa R$149 on-line (R$189 no local); tour premium custa R$290【53215053480506†L381-L417】. Reserve com antecedência.",
+    "rating": 4.5,
+    "google_maps": "https://goo.gl/maps/54m9wJJwTYrduL2q9",
+    "official_link": "https://vinicolajolimont.com.br",
+    "price_source": "Chapéu de Viagem【53215053480506†L381-L417】",
+    "images": [
+      "https://tse1.mm.bing.net/th?q=Vin%C3%ADcola%20Jolimont%20Canela&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Jolimont%20Canela%20vin%C3%ADcola&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Castelo%20Jolimont%20Canela&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Vin%C3%ADcola%20Jolimont%20Canela%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 10,
+    "name": "Snowland",
+    "city": "Gramado",
+    "category": [
+      "Parque",
+      "Neve"
+    ],
+    "recommended_period": [
+      "dia inteiro"
+    ],
+    "duration_hours": 4,
+    "travel_time_minutes": 15,
+    "price_per_person": 250,
+    "price_for_two": 500,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Parque de neve indoor com pista de esqui, patinação e tubing. Passes variam de R$199 a R$333 por pessoa dependendo do tipo; comprar on-line é mais barato【505772442600357†L115-L131】.",
+    "rating": 4,
+    "google_maps": "https://goo.gl/maps/3ATZrA3BuPQtDtQW8",
+    "official_link": "https://www.snowland.com.br",
+    "price_source": "Viaje para Gramado【505772442600357†L115-L131】",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Snowland_3.jpg/960px-Snowland_3.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Ice_Bar_Snowland.jpg/960px-Ice_Bar_Snowland.jpg",
+      "https://tse1.mm.bing.net/th?q=Snowland%20Gramado%20parque%20neve&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Snowland%20Gramado%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 11,
+    "name": "Alpen Park",
+    "city": "Canela",
+    "category": [
+      "Parque",
+      "Diversões"
+    ],
+    "recommended_period": [
+      "tarde"
+    ],
+    "duration_hours": 3,
+    "travel_time_minutes": 25,
+    "price_per_person": 118.9,
+    "price_for_two": 237.8,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Parque de diversões com diversas atrações. O passaporte adulto custa R$118,90 e o infantil R$52,90; atrações individuais têm preços de R$22 a R$72【812618186375726†L79-L100】【812618186375726†L122-L169】.",
+    "rating": 4,
+    "google_maps": "https://goo.gl/maps/uoy4PyS8VsX1iQZ78",
+    "official_link": "https://alpenpark.com.br",
+    "price_source": "Melhores Destinos【812618186375726†L79-L100】【812618186375726†L122-L169】",
+    "images": [
+      "https://tse1.mm.bing.net/th?q=Alpen%20Park%20Canela%20montanha%20russa&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Alpen%20Park%20Canela%20tren%C3%B3&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Alpen%20Park%20Canela&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Alpen%20Park%20Canela%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 12,
+    "name": "Parque da Guarita",
+    "city": "Torres",
+    "category": [
+      "Parque",
+      "Praia",
+      "Natureza"
+    ],
+    "recommended_period": [
+      "manhã",
+      "tarde"
+    ],
+    "duration_hours": 3,
+    "travel_time_minutes": 150,
+    "price_per_person": 0,
+    "price_for_two": 0,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Parque estadual com trilhas e mirantes sobre falésias. Entrada é gratuita para pedestres; veículos de fora pagam estacionamento (R$10 no inverno e R$20 no verão)【48757450796592†L50-L88】.",
+    "rating": 4.5,
+    "google_maps": "https://goo.gl/maps/gvprz4tgju4gkgzq5",
+    "official_link": null,
+    "price_source": "Prefeitura de Torres【48757450796592†L50-L88】",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/To09.jpg/960px-To09.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/78bguarita.jpg/960px-78bguarita.jpg",
+      "https://tse1.mm.bing.net/th?q=Parque%20da%20Guarita%20Torres%20RS&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Parque%20da%20Guarita%20Torres%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 13,
+    "name": "Morro das Furnas / Torre do Meio",
+    "city": "Torres",
+    "category": [
+      "Mirante",
+      "Natureza"
+    ],
+    "recommended_period": [
+      "manhã"
+    ],
+    "duration_hours": 1,
+    "travel_time_minutes": 150,
+    "price_per_person": 0,
+    "price_for_two": 0,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Mirantes no Parque da Guarita com vista para o mar e as formações rochosas. Acesso gratuito integrado ao parque.",
+    "rating": 4,
+    "google_maps": "https://goo.gl/maps/Fqh4xaqHE5jY4n9H8",
+    "official_link": null,
+    "price_source": "Prefeitura de Torres【48757450796592†L50-L88】",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/78bguarita.jpg/960px-78bguarita.jpg",
+      "https://tse1.mm.bing.net/th?q=Morro%20das%20Furnas%20Torre%20do%20Meio%20Torres%20RS&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Torre%20do%20Meio%20Torres%20RS&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Morro%20das%20Furnas%20/%20Torre%20do%20Meio%20Torres%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 14,
+    "name": "Morro do Farol",
+    "city": "Torres",
+    "category": [
+      "Mirante",
+      "Natureza"
+    ],
+    "recommended_period": [
+      "tarde",
+      "pôr do sol"
+    ],
+    "duration_hours": 1.5,
+    "travel_time_minutes": 150,
+    "price_per_person": 0,
+    "price_for_two": 0,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Mirante com vistas panorâmicas da cidade e das praias. Acesso gratuito e aberto 24 horas【576828555668316†L80-L90】.",
+    "rating": 4.5,
+    "google_maps": "https://goo.gl/maps/SuZG7Kuk9AMYcmhB6",
+    "official_link": null,
+    "price_source": "Santo Anjo【576828555668316†L80-L90】",
+    "images": [
+      "https://tse1.mm.bing.net/th?q=Morro%20do%20Farol%20Torres%20RS&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Farol%20Torres%20Rio%20Grande%20do%20Sul%20vista&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Morro%20do%20Farol%20Torres%20mirante&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Morro%20do%20Farol%20Torres%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 15,
+    "name": "Praia da Cal + Molhes da Barra",
+    "city": "Torres",
+    "category": [
+      "Praia",
+      "Natureza"
+    ],
+    "recommended_period": [
+      "manhã",
+      "tarde"
+    ],
+    "duration_hours": 3,
+    "travel_time_minutes": 150,
+    "price_per_person": 0,
+    "price_for_two": 0,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Praia urbana com calçadão e molhes de pedra que avançam mar adentro. Ideal para caminhadas e banho de mar.",
+    "rating": 4.5,
+    "google_maps": "https://goo.gl/maps/rYnpCuxveNoAzhdk7",
+    "official_link": null,
+    "price_source": "--",
+    "images": [
+      "https://tse1.mm.bing.net/th?q=Praia%20da%20Cal%20Torres%20Molhes%20da%20Barra&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Molhes%20da%20Barra%20Torres%20RS&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Praia%20da%20Cal%20Torres%20RS&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Praia%20da%20Cal%20%2B%20Molhes%20da%20Barra%20Torres%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 16,
+    "name": "Orla do Guaíba + Usina do Gasômetro",
+    "city": "Porto Alegre",
+    "category": [
+      "Orla",
+      "Parque",
+      "Cultura"
+    ],
+    "recommended_period": [
+      "tarde",
+      "pôr do sol"
+    ],
+    "duration_hours": 2.5,
+    "travel_time_minutes": 160,
+    "price_per_person": 0,
+    "price_for_two": 0,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Passeio pela orla revitalizada do Guaíba, com parques, ciclovias e vista para o pôr do sol. Acesso gratuito 24h【312853334488301†L86-L94】. A Usina do Gasômetro (centro cultural) costuma ter entrada gratuita; consulte a programação.",
+    "rating": 4.5,
+    "google_maps": "https://goo.gl/maps/FDixmxXG7FwPtg6d6",
+    "official_link": null,
+    "price_source": "Santo Anjo【312853334488301†L86-L94】",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Usina%20do%20Gas%C3%B4metro%20-%20Porto%20Alegre.jpg?width=1000",
+      "https://tse1.mm.bing.net/th?q=Orla%20do%20Gua%C3%ADba%20Usina%20do%20Gas%C3%B4metro%20Porto%20Alegre&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Orla%20do%20Gua%C3%ADba%20Porto%20Alegre%20p%C3%B4r%20do%20sol&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Orla%20do%20Gua%C3%ADba%20%2B%20Usina%20do%20Gas%C3%B4metro%20Porto%20Alegre%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 17,
+    "name": "Cais Embarcadero",
+    "city": "Porto Alegre",
+    "category": [
+      "Orla",
+      "Lazer"
+    ],
+    "recommended_period": [
+      "tarde",
+      "noite"
+    ],
+    "duration_hours": 2,
+    "travel_time_minutes": 160,
+    "price_per_person": 0,
+    "price_for_two": 0,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Área gastronômica e de eventos à beira do Guaíba. O acesso ao cais é gratuito; alguns eventos exigem ingressos.",
+    "rating": 4,
+    "google_maps": "https://goo.gl/maps/4UC2uSbQq9k2F6oL7",
+    "official_link": null,
+    "price_source": "--",
+    "images": [
+      "https://tse1.mm.bing.net/th?q=Cais%20Embarcadero%20Porto%20Alegre&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Cais%20Embarcadero%20Gua%C3%ADba%20Porto%20Alegre&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Cais%20Embarcadero%20POA&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Cais%20Embarcadero%20Porto%20Alegre%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 18,
+    "name": "Mercado Público",
+    "city": "Porto Alegre",
+    "category": [
+      "Mercado",
+      "Histórico"
+    ],
+    "recommended_period": [
+      "manhã"
+    ],
+    "duration_hours": 2,
+    "travel_time_minutes": 160,
+    "price_per_person": 0,
+    "price_for_two": 0,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Mercado centenário com bancas de produtos regionais e restaurantes. Funcionamento: segunda a sexta 7h30 às 19h; sábado 7h30 às 18h; restaurantes podem abrir até as 22h. Entrada gratuita.",
+    "rating": 4,
+    "google_maps": "https://goo.gl/maps/BKyxCvPJm6FYuLcs9",
+    "official_link": "https://mercadopublico.com.br",
+    "price_source": "Site do Mercado Público (horário de funcionamento)【410999611307545†L83-L90】",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mercado%20P%C3%BAblico%20de%20Porto%20Alegre.jpg?width=1000",
+      "https://tse1.mm.bing.net/th?q=Mercado%20P%C3%BAblico%20Porto%20Alegre&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Mercado%20P%C3%BAblico%20Porto%20Alegre%20interior&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Mercado%20P%C3%BAblico%20Porto%20Alegre%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 19,
+    "name": "Casa de Cultura Mario Quintana",
+    "city": "Porto Alegre",
+    "category": [
+      "Cultura",
+      "Museu"
+    ],
+    "recommended_period": [
+      "tarde"
+    ],
+    "duration_hours": 2,
+    "travel_time_minutes": 160,
+    "price_per_person": 0,
+    "price_for_two": 0,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Centro cultural instalado no antigo Hotel Majestic. Visitação gratuita de terça a domingo, das 10h às 20h【906486340239053†L186-L188】.",
+    "rating": 4,
+    "google_maps": "https://goo.gl/maps/6Wb6i33KvEZbeYV88",
+    "official_link": "https://www.ccmq.com.br",
+    "price_source": "Viagem e Turismo【906486340239053†L186-L188】",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Casa%20de%20Cultura%20Mario%20Quintana.jpg?width=1000",
+      "https://tse1.mm.bing.net/th?q=Casa%20de%20Cultura%20Mario%20Quintana%20Porto%20Alegre&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=CCMQ%20Porto%20Alegre&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Casa%20de%20Cultura%20Mario%20Quintana%20Porto%20Alegre%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 20,
+    "name": "Farol Santander Porto Alegre",
+    "city": "Porto Alegre",
+    "category": [
+      "Cultura",
+      "Edifício histórico"
+    ],
+    "recommended_period": [
+      "tarde"
+    ],
+    "duration_hours": 2,
+    "travel_time_minutes": 160,
+    "price_per_person": 0,
+    "price_for_two": 0,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Centro cultural instalado no antigo prédio do Banco Nacional do Comércio. Visitação ao térreo e mezanino é gratuita; abre de terça a sábado das 10h às 19h, domingos e feriados das 11h às 18h【101884868275385†L15-L40】.",
+    "rating": 4,
+    "google_maps": "https://goo.gl/maps/3FaD69LEFiq3iFGx5",
+    "official_link": "https://www.farolsantander.com.br/porto-alegre",
+    "price_source": "Farol Santander【101884868275385†L15-L40】",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Farol%20Santander%20Porto%20Alegre.jpg?width=1000",
+      "https://tse1.mm.bing.net/th?q=Farol%20Santander%20Porto%20Alegre&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Santander%20Cultural%20Porto%20Alegre&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Farol%20Santander%20Porto%20Alegre%20Porto%20Alegre%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 21,
+    "name": "Pontal Shopping",
+    "city": "Porto Alegre",
+    "category": [
+      "Shopping",
+      "Compras"
+    ],
+    "recommended_period": [
+      "tarde",
+      "noite"
+    ],
+    "duration_hours": 2,
+    "travel_time_minutes": 160,
+    "price_per_person": 0,
+    "price_for_two": 0,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Shopping center moderno às margens do Guaíba. Entrada gratuita; horário de funcionamento: segunda a sábado das 10h às 22h; domingos e feriados das 14h às 20h (lojas) e das 11h às 21h (alimentação)【410999611307545†L83-L90】.",
+    "rating": 3.5,
+    "google_maps": "https://goo.gl/maps/gpZdKyA2nLH3eDHJ6",
+    "official_link": "https://www.pontalshopping.com.br",
+    "price_source": "Pontal Shopping【410999611307545†L83-L90】",
+    "images": [
+      "https://tse1.mm.bing.net/th?q=Pontal%20Shopping%20Porto%20Alegre%20Gua%C3%ADba&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Pontal%20Shopping%20POA%20orla&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Pontal%20Shopping%20Porto%20Alegre&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Pontal%20Shopping%20Porto%20Alegre%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 22,
+    "name": "Barco Cisne Branco",
+    "city": "Porto Alegre",
+    "category": [
+      "Passeio",
+      "Barco"
+    ],
+    "recommended_period": [
+      "tarde"
+    ],
+    "duration_hours": 1.5,
+    "travel_time_minutes": 160,
+    "price_per_person": 80,
+    "price_for_two": 160,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Passeio de barco pelo Guaíba com duração aproximada de 1h. O ingresso inteiro custa R$80 (promoção R$65) e meia-entrada R$40; saída às 15h【200118196027961†L84-L90】.",
+    "rating": 4,
+    "google_maps": "https://goo.gl/maps/xqWv8M1w8pLjmVnU6",
+    "official_link": "https://www.barcocisnebranco.com.br",
+    "price_source": "Barco Cisne Branco【200118196027961†L84-L90】",
+    "images": [
+      "https://tse1.mm.bing.net/th?q=Barco%20Cisne%20Branco%20Porto%20Alegre&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Cisne%20Branco%20Gua%C3%ADba%20Porto%20Alegre&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Passeio%20barco%20Cisne%20Branco%20Porto%20Alegre&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Barco%20Cisne%20Branco%20Porto%20Alegre%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 23,
+    "name": "Templo Budista Khadro Ling",
+    "city": "Três Coroas",
+    "category": [
+      "Templo",
+      "Religião",
+      "Cultura"
+    ],
+    "recommended_period": [
+      "manhã",
+      "tarde"
+    ],
+    "duration_hours": 2.5,
+    "travel_time_minutes": 50,
+    "price_per_person": 0,
+    "price_for_two": 0,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Templo budista tibetano aberto à visitação. A entrada é gratuita; pede-se contribuição voluntária. Há restaurante e loja. Reserve algumas horas para aproveitar【206835184143034†L555-L560】.",
+    "rating": 4.5,
+    "google_maps": "https://goo.gl/maps/DKXe4fydjoxJteo68",
+    "official_link": "https://www.khadroling.org",
+    "price_source": "Blog de viagem【206835184143034†L555-L560】",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Templo%20Budista%20Chagdud%20Gonpa%20Khadro%20Ling.jpg?width=1000",
+      "https://tse1.mm.bing.net/th?q=Templo%20Budista%20Khadro%20Ling%20Tr%C3%AAs%20Coroas&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Chagdud%20Gonpa%20Khadro%20Ling%20Tr%C3%AAs%20Coroas&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Templo%20Budista%20Khadro%20Ling%20Tr%C3%AAs%20Coroas%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 24,
+    "name": "Monte da Fé",
+    "city": "Três Coroas",
+    "category": [
+      "Mirante",
+      "Religião"
+    ],
+    "recommended_period": [
+      "manhã"
+    ],
+    "duration_hours": 1.5,
+    "travel_time_minutes": 40,
+    "price_per_person": 0,
+    "price_for_two": 0,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Monte com estátua religiosa e vista panorâmica; acesso gratuito. Use calçado confortável.",
+    "rating": 3.5,
+    "google_maps": "https://goo.gl/maps/qRgr5L4Ntmyf7yqG7",
+    "official_link": null,
+    "price_source": "--",
+    "images": [
+      "https://tse1.mm.bing.net/th?q=Monte%20da%20F%C3%A9%20Serra%20Ga%C3%BAcha&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Monte%20da%20F%C3%A9%20Igrejinha%20RS&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Monte%20da%20F%C3%A9%20Tr%C3%AAs%20Coroas&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Monte%20da%20F%C3%A9%20Tr%C3%AAs%20Coroas%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 25,
+    "name": "Restaurante Quintanilha Buffet",
+    "city": "Gramado",
+    "category": [
+      "Gastronomia",
+      "Buffet"
+    ],
+    "recommended_period": [
+      "almoço"
+    ],
+    "duration_hours": 1.5,
+    "travel_time_minutes": 10,
+    "price_per_person": 72,
+    "price_for_two": 72,
+    "prime_gourmet": "sim",
+    "prime_benefit": "compre 1, ganhe 1",
+    "observation": "Buffet livre com comida caseira. Valor aproximado de R$72 por pessoa. Com o Prime Gourmet, paga-se um prato e recebe-se outro gratuitamente.",
+    "rating": 4,
+    "google_maps": "https://goo.gl/maps/y9PmcrZ1c4NKt9vn6",
+    "official_link": null,
+    "price_source": "PDF gramados",
+    "images": [
+      "https://tse1.mm.bing.net/th?q=Restaurante%20Quintanilha%20Gramado%20buffet&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Quintanilha%20Gramado%20restaurante&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Restaurante%20Quintanilha%20Prime%20Gourmet%20Gramado&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Restaurante%20Quintanilha%20Buffet%20Gramado%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 26,
+    "name": "Prato Grana Padano (Restaurante Italiano)",
+    "city": "Gramado",
+    "category": [
+      "Gastronomia",
+      "Prato"
+    ],
+    "recommended_period": [
+      "almoço",
+      "jantar"
+    ],
+    "duration_hours": 1,
+    "travel_time_minutes": 10,
+    "price_per_person": 159,
+    "price_for_two": 318,
+    "prime_gourmet": "não",
+    "prime_benefit": null,
+    "observation": "Prato de massa servido no queijo Grana Padano em restaurante italiano. Valor aproximado de R$159 (serve duas pessoas).",
+    "rating": 4,
+    "google_maps": "https://goo.gl/maps/EVcTFRmZqKw9v8YD8",
+    "official_link": null,
+    "price_source": "PDF gramados",
+    "images": [
+      "https://tse1.mm.bing.net/th?q=Grana%20Padano%20Gramado%20restaurante%20prato&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=massa%20Grana%20Padano%20Gramado&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=restaurante%20Gramado%20grana%20padano&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Prato%20Grana%20Padano%20%28Restaurante%20Italiano%29%20Gramado%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  },
+  {
+    "id": 27,
+    "name": "Rodízio de Fondue",
+    "city": "Gramado",
+    "category": [
+      "Gastronomia",
+      "Fondue"
+    ],
+    "recommended_period": [
+      "noite"
+    ],
+    "duration_hours": 2,
+    "travel_time_minutes": 10,
+    "price_per_person": 189,
+    "price_for_two": 378,
+    "prime_gourmet": "sim",
+    "prime_benefit": "compre 1, ganhe 1",
+    "observation": "Rodízio de fondue típico de Gramado. Valor médio R$189 por pessoa; muitos restaurantes participam do Prime Gourmet com compra de um rodízio e outro grátis.",
+    "rating": 4,
+    "google_maps": "https://goo.gl/maps/LcsyT9RttHyrY87DA",
+    "official_link": null,
+    "price_source": "PDF gramados",
+    "images": [
+      "https://tse1.mm.bing.net/th?q=Fondue%20Gramado%20rod%C3%ADzio&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=rod%C3%ADzio%20fondue%20Gramado%20restaurante&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=fondue%20sequ%C3%AAncia%20Gramado&w=900&h=550&c=7&rs=1&p=0",
+      "https://tse1.mm.bing.net/th?q=Rod%C3%ADzio%20de%20Fondue%20Gramado%20turismo&w=900&h=550&c=7&rs=1&p=0"
+    ],
+    "image_note": "Imagens externas reais; a página tenta várias fontes por card e usa fallback visual se alguma fonte bloquear hotlink."
+  }
+];
+let filtered = [...ATTRACTIONS];
+
+const $ = (id) => document.getElementById(id);
+function brl(v){return Number(v||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});}
+function clean(s){return (s||'').toString().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();}
+function uniq(arr){return [...new Set(arr.filter(Boolean))];}
+function sourceList(item){return uniq([...(item.images||[])]);}
+
+function loadSmartImage(img, sources, name){
+  let i = 0;
+  const box = img.closest('.photo') || img.parentElement;
+  const loader = box?.querySelector('.loading');
+  const setFallback = () => {
+    if(loader) loader.remove();
+    img.remove();
+    const div = document.createElement('div');
+    div.className = 'fallback';
+    div.innerHTML = `<div>Foto não carregou<small>${escapeHtml(name)}<br>Verifique a conexão ou use o link do card.</small></div>`;
+    box?.appendChild(div);
+  };
+  const next = () => {
+    if (i >= sources.length) return setFallback();
+    img.classList.remove('ready');
+    img.src = sources[i++];
+  };
+  img.onload = () => { if(loader) loader.remove(); img.classList.add('ready'); };
+  img.onerror = next;
+  img.referrerPolicy = 'no-referrer';
+  next();
+}
+
+function escapeHtml(text){return String(text??'').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
+
+function fillSelect(id, values){
+  const sel=$(id); const current=sel.value;
+  for(const value of values){const opt=document.createElement('option'); opt.value=value; opt.textContent=value; sel.appendChild(opt);}
+  sel.value=current;
+}
+
+function setupFilters(){
+  fillSelect('city', uniq(ATTRACTIONS.map(x=>x.city)).sort());
+  fillSelect('period', uniq(ATTRACTIONS.flatMap(x=>x.recommended_period||[])).sort());
+  fillSelect('category', uniq(ATTRACTIONS.flatMap(x=>x.category||[])).sort());
+  ['city','period','price','prime','category','search','sort'].forEach(id => $(id).addEventListener('input', applyFilters));
+}
+
+function inPriceRange(item, range){
+  if(!range) return true;
+  const price = Number(item.price_per_person || 0);
+  if(range==='free') return price === 0;
+  if(range==='50') return price > 0 && price <= 50;
+  if(range==='100') return price > 0 && price <= 100;
+  if(range==='200') return price > 0 && price <= 200;
+  if(range==='200+') return price > 200;
+  return true;
+}
+
+function applyFilters(){
+  const city=$('city').value, period=$('period').value, price=$('price').value, prime=$('prime').value, category=$('category').value, search=clean($('search').value), sort=$('sort').value;
+  filtered = ATTRACTIONS.filter(item => {
+    const matchesSearch = !search || clean([item.name,item.city,(item.category||[]).join(' '),item.observation].join(' ')).includes(search);
+    return (!city || item.city===city)
+      && (!period || (item.recommended_period||[]).includes(period))
+      && inPriceRange(item, price)
+      && (!prime || item.prime_gourmet===prime)
+      && (!category || (item.category||[]).includes(category))
+      && matchesSearch;
+  });
+  if(sort==='price-asc') filtered.sort((a,b)=>Number(a.price_per_person||0)-Number(b.price_per_person||0));
+  if(sort==='price-desc') filtered.sort((a,b)=>Number(b.price_per_person||0)-Number(a.price_per_person||0));
+  if(sort==='rating-desc') filtered.sort((a,b)=>Number(b.rating||0)-Number(a.rating||0));
+  if(sort==='distance-asc') filtered.sort((a,b)=>Number(a.travel_time_minutes||999)-Number(b.travel_time_minutes||999));
+  render();
+}
+
+function render(){
+  const grid=$('grid'); grid.innerHTML='';
+  $('count').textContent = `${filtered.length} de ${ATTRACTIONS.length} locais exibidos`;
+  if(!filtered.length){grid.innerHTML='<div class="empty"><h2>Nenhum local encontrado</h2><p>Limpe algum filtro ou busque por outro nome.</p></div>';return;}
+  for(const item of filtered){
+    const priceText = Number(item.price_per_person||0) === 0 ? 'Gratuito' : brl(item.price_per_person);
+    const period = (item.recommended_period||[]).join(', ');
+    const cats = (item.category||[]).map(c=>`<span class="chip">${escapeHtml(c)}</span>`).join('');
+    const maps = item.google_maps ? `<a href="${item.google_maps}" target="_blank" rel="noopener">Mapa</a>` : '';
+    const official = item.official_link ? `<a href="${item.official_link}" target="_blank" rel="noopener">Site</a>` : '';
+    const prime = item.prime_gourmet && item.prime_gourmet !== 'não' ? `<div class="prime">Prime Gourmet: ${escapeHtml(item.prime_gourmet)}${item.prime_benefit?` — ${escapeHtml(item.prime_benefit)}`:''}</div>` : '';
+    const sources = sourceList(item);
+    const thumbs = sources.slice(1,4).map(u=>`<span class="thumb"><img src="${u}" alt="${escapeHtml(item.name)} foto" referrerpolicy="no-referrer" loading="lazy" onerror="this.parentElement.style.display='none'"></span>`).join('');
+    const card = document.createElement('article'); card.className='card';
+    card.innerHTML = `
+      <div class="photo"><div class="loading">Carregando foto...</div><img alt="${escapeHtml(item.name)}" loading="lazy"></div>
+      <div class="content">
+        <h2 class="title">${escapeHtml(item.name)}</h2>
+        <div class="sub">${escapeHtml(item.city)} • ${escapeHtml(period || 'período livre')}</div>
+        <div class="chips">${cats}</div>
+        <div class="row">${item.duration_hours || '?'}h • ${item.travel_time_minutes ?? '?'} min do hotel</div>
+        <div class="price">${priceText}</div>
+        ${prime}
+        <div class="rating">Nota: ${item.rating ?? 'a confirmar'}</div>
+        <div class="thumbs">${thumbs}</div>
+        <div class="obs">${escapeHtml(item.observation || '')}</div>
+        <div class="actions">${maps}${official}</div>
+      </div>`;
+    grid.appendChild(card);
+    loadSmartImage(card.querySelector('.photo img'), sources, item.name);
+  }
+}
+
+setupFilters();
+applyFilters();
+</script>
+</body>
+</html>
